@@ -7,8 +7,12 @@ def indexpage():
     return render_template('index.html')
  
 @app.route('/home')  
-def indexpage():  
+def loginpage():  
     return render_template('home.html')
+
+@app.route('/<search>')  
+def userpage():  
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run()
