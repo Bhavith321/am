@@ -9,11 +9,6 @@ def index():
 @app.route('/index')  
 def indexpage():  
     return render_template('index.html')
-
-@app.route('/index')
-def daccess():
-    abort(401)
-    this_is_never_executed()
    
 @app.route('/<search>')  
 def userpage(search):  
