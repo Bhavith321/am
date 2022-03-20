@@ -11,7 +11,7 @@ def loginpage():
     return render_template('home.html')
 
 @app.route('/<search>')  
-def userpage():  
+def userpage(search):  
     return render_template('index.html')
 
 if __name__ == '__main__':
