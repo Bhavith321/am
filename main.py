@@ -4,15 +4,16 @@ app = Flask(__name__)
 
 @app.route('/')  
 def indexpage():  
-    return render_template('index.html')
+    return redirect(url_for('index'))
 
 @app.route('/index')  
-def redpage():  
+def rootpage():  
     return render_template('index.html')
 
 @app.route('/<search>')
-def termsearch(search):
+def searchpages(search):
     return redirect(url_for('index'))
+
 
 if __name__ == '__main__':
     app.run()
