@@ -6,13 +6,13 @@ app = Flask(__name__)
 def indexpage():  
     return render_template('index.html')
 
-@app.route('/index/')  
+@app.route('/index')  
 def redpage():  
     return render_template('index.html')
 
 @app.route('/<search>')
 def termsearch(search):
-    return redirect(url_for('/index/'))
+    return redirect(url_for('index'))
 
 if __name__ == '__main__':
     app.run()
