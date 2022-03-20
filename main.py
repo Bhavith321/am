@@ -2,11 +2,7 @@ from flask import *
 
 app = Flask(__name__)  
 
-@app.route('/')
-def index():
-    return redirect(url_for('index'))
- 
-@app.route('/index')  
+@app.route('/')  
 def indexpage():  
     return render_template('index.html')
    
