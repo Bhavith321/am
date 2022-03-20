@@ -7,7 +7,7 @@ def indexpage():
     return render_template('index.html')
 
 @app.route('/index/')  
-def indexpage():  
+def redpage():  
     return render_template('index.html')
 
 @app.route('/<search>')
