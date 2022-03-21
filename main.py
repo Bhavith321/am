@@ -7,7 +7,7 @@ def rootpage():
     return render_template('index.html')
 
 @app.route('/login')  
-def rootpage():  
+def loginpage():  
     return render_template('login.html')
 
 if __name__ == '__main__':
