@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compitable" content="IE=10">
   <link rel="shortcut icon" href="/static/images/logo.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/style6.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-223304037-1">
   </script>
@@ -80,7 +80,7 @@ body {
             <h4 style="text-align:center;" class="text-bold bg-light"><b>User Login Interface</b></h4>
           </div>
          <div class="container-lg">
-           <form name="login_form" id="login_form" onsubmit="return validateForm1()" action="" method="POST"> 
+           <form name="login_form" id="login_form" onsubmit="return validateForm()" action="/login" method="POST"> 
             <div class="form-group-sm">
               <label>Username</label>
               <input type="text" name="username" id="username" class="form-control">
