@@ -1,6 +1,6 @@
 from flask import *
 app = Flask(__name__)
-app.secret_key = '7533yfvuydfhh55566’
+app.secret_key = '7b3yfvuydfhh55566’
 
 @app.route('/')
 def index():
