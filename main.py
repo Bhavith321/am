@@ -26,7 +26,7 @@ def logout():
    return redirect(url_for('index'))
 
 @app.route('/login')
-def login():
+def logijjn():
    return render_template('login.html')
 
 if name == 'main':
