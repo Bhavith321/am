@@ -15,8 +15,8 @@ def homeage():
 @app.route('/')
 def index():
      if 'username' in session:
-           return f'Logged in as {session["username"]}'
-         return render_template('login.html')
+           return f'Logged in as {session["username"]}.Click here to logout.'
+         return 'You are not logged in'
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -29,3 +29,6 @@ def login():
 def logout():
     session.pop('username', None)
     return redirect(url_for('index'))
+
+if __name__='__main__':
+   app.run()
