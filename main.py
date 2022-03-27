@@ -30,4 +30,4 @@ def logijjn():
    return render_template('login.html')
 
 if name == 'main':
-   app.run(debug = True)
+   app.run()
