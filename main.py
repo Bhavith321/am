@@ -29,5 +29,5 @@ def logout():
 def logijjn():
    return render_template('login.html')
 
-if name == 'main':
+if __name__ == '__main__':
    app.run()
