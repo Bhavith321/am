@@ -1,14 +1,34 @@
+
 from flask import *
+app = Flask(__name__)
+app.secret_key = '7533yfvuydfhh55566’
 
-app = Flask(__name__)  
+@app.route('/')
+def index():
+   if 'username' in session:
+      username = session['username']
+         return 'Logged in as ' + username + '<br>' + "<b><a href = '/logout'>click here to log out</a></b>"
+   return redirect(url_for('login'))
 
-@app.route('/')  
-def rootpage():  
-    return render_template('index.html')
+@app.route('/index')
+def home():
+   return render_template('index.html')
 
-@app.route('/login')  
-def loginpage():  
-    return render_template('login.html')
+@app.route('/login', methods = ['GET', 'POST'])
+def login():
+   if request.method == 'POST':
+      session['username'] = request.form['username']
+      return redirect(url_for('index'))
+   return redirect(url_for('login'))
 
-if __name__ == '__main__':
-    app.run()
+@app.route('/logout')
+def logout():
+   session.pop('username', None)
+   return redirect(url_for('index'))
+
+@app.route('/login')
+def login():
+   return render_template('login.html')
+
+if name == 'main':
+   app.run(debug = True)
