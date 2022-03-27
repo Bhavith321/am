@@ -1,5 +1,6 @@
 from flask import *
 app = Flask(__name__)
+app.secret_key = '763sbdvsyje763'
 
 @app.route('/')
 def homepe():
