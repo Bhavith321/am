@@ -1,18 +1,10 @@
-from flask import *
+from flask import render_template
 
-app = Flask(__name__)
+app = flask(_name_)
 
 @app.route('/')
-def indx():
-    return render_template('index.html')
+def homeage():
+     return render_template('index.html')
 
-@app.route('/home')
-def ggome():
-    return render_template('index.html')
-
-@app.route('/login')
-def loginiiu():
-    return render_template('login.html')
-
-if __name__ = '__main__':
+if __name__='__main__':
    app.run()
