@@ -1,10 +1,9 @@
-from flask import render_template
-
-app = flask(_name_)
+from flask import *
+app = Flask(__name__)
 
 @app.route('/')
-def homeage():
-     return render_template('index.html')
+def index():
+   return render_template('index.html')
 
-if __name__='__main__':
+if __name__ == '__main__':
    app.run()
