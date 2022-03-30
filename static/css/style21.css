@@ -1,0 +1,5762 @@
+.bs-example {
+    margin: 20px;
+}
+
+.accordion .fa {
+    margin-right: 0.5rem;
+}
+
+.accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+/* Modal Popup */
+
+.modal-body {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.modal-body span {
+    font-weight: bold;
+}
+
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.banner_fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 10%;
+    /* pushes the icon in the middle of the height */
+    z-index: 5;
+    display: inline-block;
+}
+
+.carousel-control:hover {
+    opacity: 1;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.slick-track:before, .slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.sbiepay-feature .header p {
+    font-size: 15px;
+    color: #353744;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.panel-group {
+    color: #fff;
+}
+
+.panel {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.panel-heading {
+    padding: 10px 0 !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.panel-body {
+    border: none !important;
+}
+
+.panel-heading .collapse-btn i:before {
+    content: "\f068";
+}
+
+.panel-heading .collapse-btn.collapsed i:before {
+    content: "\f067";
+}
+
+.panel-collapse>.panel-group {
+    padding-left: 10px;
+}
+
+.panel-collapse>.panel-group>.panel>.panel-collapse {
+    padding-left: 10px;
+}
+
+.panel-collapse>.panel-group>.panel>.panel-heading {
+    padding: 2px !important;
+}
+
+.panel-collapse>ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* .active, .dot:hover {
+    background-color: #717171;
+} */
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+section, footer {
+    float: left;
+    width: 100%;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1;
+}
+
+header.crpto-header .navbar-default .navbar-header .dropdown {
+    float: left;
+    padding-top: 17px;
+    padding-left: 35px;
+}
+
+header.crpto-header .navbar {
+    margin-bottom: 0;
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    border-radius: 0;
+    z-index: 9;
+    padding-top: 59px;
+    transition: all ease 0.4s;
+}
+
+header.crpto-header .navbar.navbar-default.scroll {
+    position: fixed;
+    background-color: #000066;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 7px rgba(255, 255, 255, 0.30);
+    z-index: 9999;
+    transition: all cubic-bezier(.86, 0, .07, 1) 0.4s;
+}
+
+header.crpto-header .navbar-default .navbar-header .dropdown img {
+    float: left;
+}
+
+header.crpto-header .navbar-default .navbar-header .dropdown .dropdown-menu {
+    min-width: 85px;
+    margin: 11px 6px 0;
+}
+
+header.crpto-header .navbar-default .navbar-header .dropdown .dropdown-menu a {
+    text-align: center;
+}
+
+header.crpto-header .navbar-default .navbar-header .dropdown .glyphicon {
+    color: #fff;
+    font-size: 8px;
+    padding-left: 10px;
+}
+
+header.crpto-header .navbar-default .navbar-header {
+    position: relative;
+}
+
+header.crpto-header .navbar-default .navbar-header .navbar-brand {
+    padding: 8px 15px;
+}
+
+header.crpto-header .navbar-default .navbar-header .navbar-brand img {
+    width: 158px;
+    object-fit: contain;
+    height: 40px;
+}
+
+header.crpto-header .navbar-default .navbar-brand::before {
+    border-right: 1px solid #ffffff12;
+    content: "";
+    position: absolute;
+    width: 96%;
+    height: 38%;
+    right: 59px;
+    top: 17px;
+}
+
+header.crpto-header .nav.navbar-nav li a {
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.4s;
+    font-weight: 500;
+    padding: 10px 18px;
+    /* padding: 10px 40px 10px 40px; */
+}
+
+header.crpto-header .nav.navbar-nav.nav-sbiepay {
+    padding-left: 25px;
+    padding-top: 5px;
+}
+
+header.crpto-header .nav.navbar-nav li a:hover {
+    color: #D5DAF5;
+    text-decoration: underline;
+}
+
+header.crpto-header .nav.navbar-nav.navbar-right li a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.headline-sbiepay {
+    font-size: 40px;
+    font-weight: bold;
+    color: #00c6ff;
+    text-align: left;
+}
+
+header.crpto-header .navbar-right {
+    padding-top: 5px;
+}
+
+header.crpto-header .navbar-right li a.btn-default {
+    border: transparent;
+    background: linear-gradient(to right, #00c6ff, #5165cd);
+    padding: 5px 30px;
+    border-radius: 46px;
+    transition: all 0.4s;
+    margin-top: 4px;
+}
+
+header.crpto-header .navbar-right li {
+    padding-right: 4px;
+}
+
+header.crpto-header .navbar-right li a.btn-default:hover {
+    background: linear-gradient(to right, #00c6ff, #5165cd);
+}
+
+header.crpto-header .li-drp .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+header.crpto-header .li-drp .dropdown {
+    line-height: 38px;
+}
+
+header.crpto-header .li-drp a {
+    text-decoration: none;
+}
+
+header.crpto-header .li-drp .dropdown-content a {
+    color: #fff;
+    display: block;
+    padding: 2px 0 !important;
+    border-bottom: 1px solid #ffffff40;
+}
+
+header.crpto-header .li-drp .dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+header.crpto-header .li-drp .dropbtn .glyphicon {
+    font-size: 8px;
+    margin-left: 5px;
+    top: 0;
+}
+
+header.crpto-header .li-drp .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #263264;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 38px;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: center;
+    right: auto;
+    left: -40px;
+}
+
+header.crpto-header .li-drp .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    header.crpto-header .navbar {
+        padding-top: 20px;
+    }
+    header.crpto-header .navbar-default .navbar-brand::before {
+        border-right: 1px solid #ffffff40;
+        width: 5%;
+        left: 166px;
+    }
+    header.crpto-header .navbar-default .navbar-header .dropdown {
+        padding-left: 10px;
+    }
+    header.crpto-header .nav.navbar-nav.nav-sbiepay, header.crpto-header .navbar-right {
+        padding-left: 5px;
+        background-color: #263063;
+        margin: 0 -15px;
+    }
+    header.crpto-header .navbar-right {
+        padding-bottom: 15px;
+    }
+    header.crpto-header .navbar-collapse {
+        border-color: unset;
+    }
+    header.crpto-header .navbar-right li {
+        padding-right: 5px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 767px) {
+    header.crpto-header .navbar-header {
+        float: none;
+    }
+    header.crpto-header .navbar-left, header.crpto-header .navbar-right {
+        float: none !important;
+    }
+    header.crpto-header .navbar-toggle {
+        display: block;
+    }
+    header.crpto-header .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        padding: 0 0px;
+        margin-right: 16px;
+    }
+    header.crpto-header .navbar-default {
+        top: 0;
+        padding-top: 20px;
+        border-width: 0 0 1px;
+    }
+    header.crpto-header .navbar-collapse.collapse {
+        display: none!important;
+    }
+    header.crpto-header .navbar-nav {
+        float: none !important;
+        margin-top: 0.5px;
+    }
+    header.crpto-header .navbar-nav>li {
+        float: none;
+    }
+    header.crpto-header .navbar-nav li a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    header.crpto-header .collapse.in {
+        display: block !important;
+    }
+    header.crpto-header .navbar-default .navbar-brand::before {
+        right: unset;
+        width: 17%;
+        left: 59px;
+    }
+    header.crpto-header .nav.navbar-nav.nav-sbiepay {
+        padding-left: 10px;
+        padding-top: 5px;
+        background-color: #22263f;
+        border: 1px solid #ffffff20;
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-top-color: rgba(255, 255, 255, 0.125);
+        border-top: unset;
+    }
+    header.crpto-header .navbar-right li {
+        padding-right: 4px;
+    }
+    header.crpto-header .nav.navbar-nav.navbar-right {
+        padding-bottom: 20px;
+    }
+    header.crpto-header .nav.navbar-nav.navbar-right li:last-child {
+        padding-bottom: 0;
+    }
+    header.crpto-header .navbar-nav.navbar-right {
+        float: none !important;
+        margin-top: 0.5px;
+        background-color: #22263f;
+        padding-left: 12px;
+        padding-right: 15px;
+        margin-right: 0;
+        padding-bottom: 0;
+        border: 1px solid #ffffff20;
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-top-color: rgba(255, 255, 255, 0.125);
+        border-top: unset;
+    }
+}
+
+/*sbiepay Light Header*/
+
+body.sbiepay-light_version header.crpto-header .navbar-default .navbar-header .dropdown .glyphicon, body.sbiepay-light_version header.crpto-header .nav.navbar-nav.navbar-right li:first-child a {
+    color: #8388a3;
+}
+
+body.sbiepay-light_version header.crpto-header .navbar-default .navbar-brand::before {
+    border-right: 1px solid #e9e9eb;
+}
+
+body.sbiepay-light_version header.crpto-header .navbar-default.scroll .navbar-brand::before {
+    border-right: 1px solid #8388a3;
+}
+
+body.sbiepay-light_version header.crpto-header .navbar.navbar-default.scroll {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+body.sbiepay-light_version header.crpto-header .nav.navbar-nav li a:hover {
+    color: #474a59;
+}
+
+body.sbiepay-light_version header.crpto-header .nav.navbar-nav li a.btn:hover {
+    color: #fff;
+}
+
+body.sbiepay-light_version header.crpto-header .li-drp .dropdown-content {
+    background-color: #aad6e8;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+body.sbiepay-light_version header.crpto-header .li-drp .dropdown-content a {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+    body.sbiepay-light_version header.crpto-header .nav.navbar-nav.nav-sbiepay, body.sbiepay-light_version header.crpto-header .navbar-right {
+        background-color: #C4CEFF;
+    }
+    body.sbiepay-light_version header.crpto-header .navbar-collapse {
+        border-color: #e2e2e2;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 767px) {
+    body.sbiepay-light_version header.crpto-header .nav.navbar-nav.nav-sbiepay {
+        background-color: #c4ceff;
+        border: 1px solid #ffffff70;
+        border-top-color: #ffffff70;
+    }
+    body.sbiepay-light_version header.crpto-header .navbar-nav.navbar-right {
+        background-color: #c4ceff;
+        border: 1px solid #ffffff70;
+        border-top: unset;
+    }
+}
+
+/*End SBIepay Header*/
+
+/*-----------------------------------------------------------------------------------*/
+
+/*  SBIepay Banner Style
+  /*-----------------------------------------------------------------------------------*/
+
+section.sbiepay-banner {
+    position: relative;
+    width: 100%;
+}
+
+section.sbiepay-banner .btn1 {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: 1px solid blue;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    .btn1{
+    max-width: 100%;
+} 
+} 
+
+.title-sm {
+    font-size: 13px;
+    color: #5165cd;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.info-banner .title-sm {
+    color: #00c6ff;
+}
+
+.sbiepay-banner img.banner {
+    min-width: 100%;
+    min-height: 1165px;
+    height: 1165px;
+    object-fit: cover;
+}
+
+.banner-info.box {
+    position: absolute;
+    width: 100%;
+    top: 32%;
+    z-index: 2;
+}
+
+.xchangesafe-coin {
+    background-image: url('../img/coin.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 32%;
+    right: 1%;
+    z-index: 1;
+}
+
+@media screen and (min-width: 1950px) {
+    .xchangesafe-coin {
+        background-image: url('../img/coin.png');
+        background-repeat: no-repeat;
+        /* background-position: right; */
+        position: absolute;
+        width: 700px;
+        height: 700px;
+        top: 15%;
+        right: 5%;
+        z-index: 1;
+        background-size: 100% auto;
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .xchangesafe-coin {
+        display: none;
+    }
+}
+
+.banner-info.box .info-banner h3 {
+    font-size: 48px;
+    color: #fff;
+    line-height: 1.1;
+    padding-top: 18px;
+    padding-bottom: 27px;
+}
+
+.banner-info.box .info-banner p {
+    font-size: 18px;
+    color: #8388a3;
+    line-height: 1.3;
+    width: 70%;
+    padding-bottom: 37px;
+}
+
+.banner-info.box .info-banner .btn.btn-success {
+    background: linear-gradient(to right, #00c6ff, #5165cd);
+    border: transparent;
+    padding: 13px 32px;
+    border-radius: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.4s;
+}
+
+.banner-info.box .info-banner .btn.btn-success:hover {
+    background: linear-gradient(to right, #5165cd, #00c6ff);
+}
+
+.banner-info.box .banner-form {
+    background-color: #fff;
+}
+
+.banner-info.box .banner-form h4 {
+    font-size: 24px;
+    color: #474a59;
+    font-weight: 500;
+    padding-bottom: 22px;
+}
+
+.banner-info.box .banner-form {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 410px;
+    margin: 0 auto;
+    padding: 40px 40px;
+    box-shadow: 0 0px 33px #00000033;
+}
+
+.banner-info.box .banner-form form label {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #474a59;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-bottom: 19px;
+}
+
+.banner-info.box .banner-form form .form-control {
+    height: 48px;
+    font-size: 16px;
+    color: #474a59;
+    background-color: #f6f7f7;
+    border: 1px solid #e3eaec;
+    border-radius: 36px;
+    box-shadow: unset;
+    padding: 6px 21px;
+    transition: all 0.4s;
+}
+
+.banner-info.box .banner-form form input::placeholder {
+    color: #8388a3;
+}
+
+.banner-info.box .banner-form form .form-control:focus {
+    border-color: #03c6ec;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .01), 0 0 16px rgba(102, 175, 233, .12) !important;
+    background-color: #fff;
+}
+
+.banner-info.box .banner-form form .btn-default {
+    border: transparent;
+    background: linear-gradient(to right, #3dc576, #008696);
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    transition: all 0.4s;
+    border-radius: 33px;
+}
+
+.banner-info.box .banner-form form .btn-default:hover {
+    background: linear-gradient(to right, #008696, #3dc576);
+}
+
+.banner-info.box .banner-form form .form-group:nth-child(3) {
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .banner-info.box {
+        top: 11%;
+    }
+    .sbiepay-banner img.banner {
+        min-height: 1500px;
+        height: 100%;
+    }
+    .banner-info.box .info-banner h3 {
+        font-size: 30px;
+    }
+    .banner-info.box .info-banner p {
+        width: 100%;
+    }
+    .banner-info.box .banner-form {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 767px) {
+    .banner-info.box {
+        top: 17%;
+    }
+    .banner-info.box .info-banner p {
+        width: 100%;
+    }
+    .banner-info.box .banner-form {
+        width: 100%;
+    }
+    .banner-info.box .info-banner h3 {
+        font-size: 32px;
+    }
+    .banner-info.box .info-banner p {
+        font-size: 15px;
+    }
+    .sbiepay-banner img.banner {
+        min-height: 1000px;
+        height: 1050px;
+    }
+}
+
+.btn-link-doc {
+    color: #fff;
+}
+
+/*SBIepay Light Banner*/
+
+body.sbiepay-light_version section.sbiepay-banner {
+    background-image: url(../img/light-banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 266px;
+}
+
+body.sbiepay-light_version .banner-info.box .info-banner h3 {
+    color: #474a59;
+}
+
+body.sbiepay-light_version .banner-info.box .info-banner .btn.btn-success.btn2 {
+    margin-left: 18px;
+    background: linear-gradient(to right, #3dc576, #008696);
+}
+
+body.sbiepay-light_version .banner-info.box .info-banner .btn.btn-success.btn2:hover {
+    background: linear-gradient(to right, #008696, #3dc576);
+}
+
+body.sbiepay-light_version .banner-info.box {
+    position: unset;
+}
+
+@media screen and (max-width: 767px) {
+    body.sbiepay-light_version section.sbiepay-banner {
+        padding-top: 160px;
+    }
+    body.sbiepay-light_version section.sbiepay-banner .banner-info .banner-img-rgt {
+        margin-top: 30px;
+    }
+    body.sbiepay-light_version .banner-info.box .info-banner .btn.btn-success.btn2 {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+    body.sbiepay-light_version .banner-info.box .info-banner .btn.btn-success {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+    body.sbiepay-light_version section.sbiepay-banner {
+        padding-top: 160px;
+        overflow: hidden;
+        width: 100%;
+    }
+}
+
+/* End sbiepay Light Banner*/
+
+/*-----------------------------------------------------------------------------------*/
+
+/*  2.3 sbiepay Partners Style
+  /*-----------------------------------------------------------------------------------*/
+
+/*Crpto Partners*/
+
+.crpto-partners {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+
+.crpto-partners .partners-list {
+    text-align: center;
+}
+
+.crpto-partners .title {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    padding-bottom: 45px;
+    position: relative;
+}
+
+.crpto-partners .title::before {
+    position: absolute;
+    bottom: 21px;
+    content: "";
+    border-top: 2px solid #00c6ff;
+    width: 2%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.crpto-partners .partners-list li {
+    display: inline-block;
+    padding-right: 25px;
+    padding-left: 55px;
+}
+
+.crpto-partners .partners-list li img {
+    transition: 0.4s all cubic-bezier(.65, .05, .36, 1);
+}
+
+.crpto-partners .partners-list li .cc {
+    font-size: 79px;
+    color: #ffffff59;
+    transition: background 1s ease-out;
+}
+
+.crpto-partners .partners-list li .cc:hover {
+    background-clip: text !important;
+    background: linear-gradient(45deg, #fff, #888);
+    color: transparent;
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -moz-background-clip: text;
+    transition: background 1s ease-out;
+}
+
+.crpto-partners .tooltip.top {
+    padding: 4px 0;
+    margin-left: 0px;
+    margin-top: 15px;
+    opacity: 1;
+}
+
+.crpto-partners .tooltip .tooltip-inner {
+    background-color: #f7f7f7 !important;
+    color: #323746;
+    border: 1px solid #f7f7f7;
+    padding: 7px 21px;
+    font-size: 18px;
+    border-radius: 32px;
+}
+
+.crpto-partners .tooltip.top .tooltip-arrow {
+    border-top: 5px solid #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .crpto-partners .partners-list li {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .crpto-partners .title::before {
+        width: 5%;
+    }
+    .crpto-partners .partners-list li img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+    }
+    .crpto-partners .partners-list li {
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 1px;
+    }
+    .crpto-partners {
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 767px) {
+    .crpto-partners {
+        bottom: 60px;
+    }
+    .crpto-partners .partners-list li {
+        padding-bottom: 15px;
+    }
+}
+
+/*sbiepay Light Partners*/
+
+body.sbiepay-light_version .crpto-partners {
+    position: unset;
+    padding-top: 58px;
+    padding-bottom: 99px;
+}
+
+body.sbiepay-light_version .crpto-partners .title {
+    color: #474a59;
+}
+
+body.sbiepay-light_version .crpto-partners .partners-list li .cc {
+    font-size: 79px;
+    color: #dcdcdc;
+}
+
+body.sbiepay-light_version .crpto-partners .partners-list li .cc:hover {
+    color: #0fc9ff;
+    transition: all 0.4s;
+    background: none;
+}
+
+body.sbiepay-light_version .crpto-partners .tooltip.top .tooltip-arrow {
+    border-top: 5px solid #474a59;
+}
+
+body.sbiepay-light_version .crpto-partners .tooltip .tooltip-inner {
+    background: linear-gradient(45deg, #868892, #4d505f) !important;
+    color: #ffffff;
+    border: none;
+}
+
+body.sbiepay-light_version .crpto-partners .tooltip.top {
+    margin-top: 15px;
+}
+
+/* Endsbiepay Light Partners*/
+
+/*-----------------------------------------------------------------------------------*/
+
+/*  2.4 sbiepay Feature Style
+  /*-----------------------------------------------------------------------------------*/
+
+.sbiepay-payment {
+    background-image: url(../img/feature-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sbiepay-feature .header {
+    text-align: center;
+}
+
+.sbiepay-feature {
+    /* padding-top: 30px; */
+    text-align: center;
+    padding-bottom: 57px;
+}
+
+.title-mn {
+    font-size: 36px;
+    color: #474a59;
+    font-weight: 500;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.title-para {
+    font-size: 20px;
+    color: #323545;
+    width: 40%;
+    margin: 0 auto;
+    line-height: 1.3;
+}
+
+.title-faq {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 500;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.title-faqpara {
+    font-size: 20px;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    line-height: 1.3;
+}
+
+.container.spacing {
+    padding-top: 40px;
+}
+
+.feature-block img {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 65px;
+    padding: 24px;
+    box-shadow: 0 0 33px #b8c7cc33;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    transition: all 0.4s;
+}
+
+.feature-block:hover img {
+    background-color: #f1f1f1;
+}
+
+.feature-block h5 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #474a59;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.feature-block p {
+    font-size: 15px;
+    color: #353744;
+    line-height: 1.3;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.feature-btn {
+    float: left;
+    width: 100%;
+    padding-top: 76px;
+}
+
+.feature-btn a {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 14px 32px;
+}
+
+.feature-btn .btn-danger {
+    background: linear-gradient(to right, #00c6ff, #5165cd);
+    border-color: transparent;
+    border-radius: 37px;
+    padding: 14px 32px;
+    margin-right: 13px;
+    border: none;
+    transition: all 0.4s;
+}
+
+.feature-btn .btn-danger:hover {
+    background: linear-gradient(to right, #5165cd, #00c6ff);
+}
+
+.feature-btn .btn-info {
+    color: #474a59;
+    background-color: transparent;
+    border-radius: 33px;
+    border: 2px solid #d7d9de;
+    padding: 14px 32px;
+    margin-left: 13px;
+    transition: all 0.4s;
+}
+
+.feature-btn .btn-info .fa {
+    font-size: 13px;
+    color: #8388a3;
+    vertical-align: middle;
+    padding-right: 17px;
+}
+
+#myModal .modal-body iframe {
+    width: 100%;
+}
+
+#myModal .modal-body {
+    padding: 0;
+}
+
+#myModal .modal-dialog {
+    margin: 150px auto;
+}
+
+#myModal .modal-dialog button.close {
+    z-index: 999;
+    position: absolute;
+    right: -12px;
+    opacity: 1;
+    background-color: #fff;
+    box-shadow: 0 0 48px #000;
+    padding: 0 7px 5px 6px;
+    top: -13px;
+    border-radius: 33px !important;
+}
+
+#myModal .modal-dialog button.close:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .sbiepay-feature {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .sbiepay-feature .title-para {
+        font-size: 17px;
+        width: 90%;
+    }
+    .sbiepay-feature .feature-block {
+        padding-bottom: 30px;
+    }
+    .feature-btn {
+        padding-top: 30px;
+    }
+    .feature-btn .btn-danger {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .feature-btn .btn-info {
+        margin-left: 0;
+    }
+    #myModal .modal-dialog button.close {
+        right: 0;
+    }
+    #myModal .modal-dialog {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 767px) {
+    .sbiepay-feature {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .sbiepay-feature .title-para {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 5500px) and (min-width: 2000px) {
+    .sbiepay-payment {
+        background-size: 100% 100%;
+    }
+}
+
+/*sbiepay Light Feature*/
+
+body.sbiepay-light_version .sbiepay-feature {
+    padding-top: 97px;
+    padding-bottom: 100px;
+    background-color: #f7f9fa;
+}
+
+body.sbiepay-light_version .sbiepay-payment {
+    background-image: none;
+}
+
+/*End*/
+
+/*-----------------------------------------------------------------------------------*/
+
+/*  2.5 sbiepay Video Style
+  /*-----------------------------------------------------------------------------------*/
+
+.crpyto-video {
+    padding-top: 135px;
+    padding-bottom: 160px;
+}
+
+.crpyto-video .video-detail .title-mn {
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 27px;
+    line-height: 1.3;
+}
+
+.crpyto-video .video-detail .para {
+    font-size: 20px;
+    color: #323545;
+    line-height: 1.3;
+    padding-bottom: 31px;
+}
+
+.crpyto-video .video-detail .sub-para {
+    font-size: 15px;
+    color: #8388a3;
+    line-height: 1.5;
+}
+
+.crpyto-video .video-block {
+    position: relative;
+    float: right;
+}
+
+.crpyto-video .video-block::before {
+    position: absolute;
+    width: 520px;
+    background: linear-gradient(180deg, #44444405, #99999905);
+    content: "";
+    height: 40px;
+    bottom: -39px;
+    border-radius: 10px;
+    clip-path: polygon(2% 0px, 99% 0px, 93% 54%, 8% 54%);
+}
+
+.crpyto-video .video-block img {
+    border-radius: 10px;
+    width: 520px;
+    height: 390px;
+    object-fit: cover;
+    box-shadow: 0px 10px 20px #00000012;
+}
+
+.crpyto-video .video-block .infobox {
+    position: absolute;
+    top: 37%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.crpyto-video .video-block h3 {
+    position: absolute;
+    bottom: 48.5%;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    left: 47px;
+    width: 33%;
+}
+
+.crpyto-video .video-block .infobox .fa {
+    height: 82px;
+    width: 82px;
+    background: linear-gradient(45deg, #ffffff, #aeaeae);
+    border-radius: 54px;
+    font-size: 35px;
+    color: #2a304d;
+    padding-top: 23px;
+    padding-left: 7px;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.crpyto-video .video-block .infobox .fa:hover {
+    background: linear-gradient(-45deg, #ffffff, #999999);
+}
+
+@media screen and (max-width: 767px) {
+    .crpyto-video {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .crpyto-video .video-detail .title-mn {
+        width: 100%;
+        font-size: 29px;
+    }
+    .crpyto-video .video-detail {
+        padding-bottom: 50px;
+    }
+    .crpyto-video .video-block img {
+        width: 100%;
+        height: 300px;
+    }
+    .crpyto-video .video-block::before {
+        width: 100%;
+    }
+    .crpyto-video .video-block .infobox .fa {
+        height: 55px;
+        width: 55px;
+        font-size: 24px;
+        padding-top: 16px;
+    }
+    .crpyto-video .video-block h3 {
+        bottom: 47.5%;
+        font-size: 16px;
+        left: 25px;
+        width: 33%;
+    }
+    .crpyto-video .video-block .infobox {
+        top: 41%;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 767px) {
+    .crpyto-video {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    .crpyto-video .video-block {
+        float: unset;
+        margin-top: 25px;
+    }
+    .crpyto-video .video-block::before {
+        width: 100%;
+    }
+    .crpyto-video .video-block img {
+        width: 100%;
+    }
+    .crpyto-video .video-block h3 {
+        bottom: 48.5%;
+        left: 141px;
+    }
+}
+
+/*sbiepay Light Video*/
+
+body.sbiepay-light_version .crpyto-video {
+    padding-top: 91px;
+    padding-bottom: 47px;
+}
+
+body.sbiepay-light_version .crpyto-video .video-block .infobox .fa {
+    color: #00c6ff;
+}
+
+/* End sbiepay Light Video*/
+
+/*End Video*/
+
+/*-----------------------------------------------------------------------------------*/
+
+/*  2.6 sbiepay Tokens Style
+  /*-----------------------------------------------------------------------------------*/
+
+.sbiepay-tokens {
+    background-image: url(../img/token-img.png);
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+    .sbiepay-tokens {
+        background-image: url(../img/token-img-mobile.png);
+    }
+}
+
+.sbiepay-tokens .header {
+    text-align: center;
+}
+
+.sbiepay-tokens .header .title-sm {
+    color: #c53d73;
+}
+
+.sbiepay-tokens .header .title-mn {
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 28px;
+}
+
+.sbiepay-tokens .header p {
+    font-size: 18px;
+    color: #8388a3;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+.sbiepay-tokens .token_values {
+    padding-top: 74px;
+}
+
+.sbiepay-tokens .token_values ul li {
+    padding-left: 17px;
+    position: relative;
+    width: 33.11%;
+    padding-bottom: 33px;
+    display: inline-block;
+}
+
+.sbiepay-tokens .token_values ul li::before {
+    position: absolute;
+    content: "\f0da";
+    top: 0;
+    left: 0;
+    font-family: fontawesome;
+    color: #00ffff;
+}
+
+.sbiepay-tokens .token_values ul li h4 {
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 7px;
+}
+
+.sbiepay-tokens .token_values ul li h5 {
+    font-size: 18px;
+    color: #8388a3;
+}
+
+.sbiepay-tokens .tm-counter {
+    padding-top: 84px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.sbiepay-tokens .tm-counter .title-sm {
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    padding-bottom: 37px;
+}
+
+.sbiepay-tokens .tm-counter .title-sm::before {
+    position: absolute;
+    bottom: 21px;
+    content: "";
+    border-top: 2px solid #3dc576;
+    width: 2%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.tm-counter #tiles {
+    text-align: center;
+}
+
+.tm-counter #tiles, .tm-counter #tiles span {
+    font-size: 72px;
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+    display: inline-block;
+    padding-right: 80px;
+    padding-left: 80px;
+    vertical-align: middle;
+}
+
+.tm-counter #tiles:first-child {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.tm-counter #tiles span:first-child {
+    padding-left: 0;
+}
+
+.tm-counter #tiles span:last-child {
+    padding-right: 0;
+}
+
+.tm-counter #tiles div {
+    font-size: 13px;
+    color: #3dc576;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 19px;
+}
+
+#labelsfc {
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .sbiepay-tokens {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .sbiepay-tokens .header p {
+        font-size: 16px;
+        width: 100%;
+    }
+    .sbiepay-tokens .token_values {
+        padding-top: 60px;
+        padding-left: 10px;
+    }
+    .sbiepay-tokens .token_values ul li {
+        padding-left: 17px;
+        width: 100%;
+    }
+    .tm-counter #tiles, .tm-counter #tiles span {
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 16px;
+        vertical-align: top;
+    }
+    .tm-counter #tiles div {
+        font-size: 11px;
+    }
+    .chart-1, .chart-2 {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 15px;
+    }
+    #chartContainer1 canvas {
+        width: 310px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 767px) {
+    .sbiepay-tokens {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .sbiepay-tokens .token_values ul li {
+        width: 49%;
+    }
+    .tm-counter #tiles, .tm-counter #tiles span {
+        font-size: 50px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .chart-1, .chart-2 {
+        max-width: 100%;
+        width: 555px;
+        height: 435px;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        margin-bottom: 15px;
+    }
+}
+
+/*sbiepay Light Token CSS*/
+
+body.sbiepay-light_version .sbiepay-tokens .token_values ul li h4, body.sbiepay-light_version .sbiepay-tokens .tm-counter .title-sm, body.sbiepay-light_version .sbiepay-tokens .header .title-mn, body.sbiepay-light_version .tm-counter #tiles, body.sbiepay-light_version .tm-counter #tiles span, body.sbiepay-light_version .chart-1 h3, body.sbiepay-light_version .chart-2 h3 {
+    color: #474a59;
+}
+
+body.sbiepay-light_version .sbiepay-tokens .token_values ul li::before, body.sbiepay-light_version .tm-counter #tiles div {
+    color: #c53d73;
+}
+
+body.sbiepay-light_version .chart-1, body.sbiepay-light_version .chart-2 {
+    background-color: #f7f9fa;
+    border: 2px solid #e3eaec;
+}
+
+body.sbiepay-light_version .sbiepay-tokens {
+    background-image: url(../img/light-timeline-bg.png);
+    padding-bottom: 25px;
+}
+
+body.sbiepay-light_version .chart-1 #chartContainer3, body.sbiepay-light_version .chart-2 #chartContainer4 {
+    height: 300px;
+    width: 100%;
+    padding-top: 50px;
+    vertical-align: middle;
+}
+
+/*End sbiepay Light Token CSS*/
+
+/*-----------------------------------------------------------------------------------*/
+
+/*  2.7 sbiepay Webapp Style
+  /*-----------------------------------------------------------------------------------*/
+
+.sbiepay-webapp {
+    padding-top: 100px;
+    background-image: url(../img/webapp-bg.png);
+    background-repeat: no-repeat;
+    background-position: top 39px right 40px;
+}
+
+.sbiepay-webapp .header {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.sbiepay-webapp .header .title-sm {
+    color: #51c982;
+}
+
+.sbiepay-webapp .dtls-bx li {
+    padding-bottom: 5px;
+    position: relative;
+    padding-left: 29px;
+}
+
+.sbiepay-webapp .dtls-bx p {
+    font-size: 15px;
+}
+
+.sbiepay-webapp .dtls-bx li::before {
+    position: absolute;
+    content: "\f0da";
+    top: 3px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: fontawesome;
+    color: #000066;
+}
+
+.sbiepay-webapp .dtls-bx li h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #3dc576;
+    padding-bottom: 18px;
+}
+
+.sbiepay-webapp .dtls-bx li p {
+    font-size: 15px;
+    color: #353744;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.sbiepay-webapp .dtls-bx a {
+    background: linear-gradient(to right, #3dc576, #008696);
+    padding: 14px 32px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 27px;
+    border: none;
+    margin-left: 29px;
+}
+
+.sbiepay-webapp .dtls-bx a:hover {
+    background: linear-gradient(to right, #008696, #3dc576);
+}
+
+@media screen and (max-width: 767px) {
+    .sbiepay-webapp {
+        background-size: 30%;
+        padding-top: 70px;
+    }
+    .sbiepay-webapp .dtls-bx {
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 767px) {
+    .sbiepay-webapp {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    .sbiepay-webapp .wa-img img {
+        margin: 0 auto;
+    }
+}
+
+/*sbiepay Light Webapp*/
+
+body.sbiepay-light_version .sbiepay-webapp {
+    padding-top: 100px;
+}
+
+/*sbiepay Light Webapp*/
+
+/*-----------------------------------------------------------------------------------*/
+
+/*  2.8 sbiepay Mobileapp Style
+  /*-----------------------------------------------------------------------------------*/
+
+.sbiepay-mobileapp {
+    padding-top: 0px;
+    padding-bottom: 135px;
+}
+
+.sbiepay-mobileapp .header {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.sbiepay-mobileapp .header .title-mn {
+    font-size: 36px;
+    color: #474a59;
+    font-weight: 500;
+    padding-top: 9px;
+    padding-bottom: 24px;
+}
+
+.sbiepay-mobileapp .detail-block {
+    padding-top: 0px;
+}
+
+.sbiepay-mobileapp .detail-block h5 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #474a59;
+    padding-bottom: 37px;
+}
+
+.sbiepay-mobileapp .detail-block p {
+    font-size: 15px;
+    color: #353744;
+    line-height: 1.2;
+    padding-bottom: 25px;
+}
+
+.sbiepay-mobileapp .detail-block .btn {
+    background: linear-gradient(to right, #00c6ff, #5165cd);
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    padding: 14px 31px;
+    border-radius: 34px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.sbiepay-mobileapp .detail-block .btn:hover {
+    background: linear-gradient(to right, #5165cd, #00c6ff);
+}
+
+.sbiepay-mobileapp .detail-block .download-dtls {
+    padding-top: 60px;
+}
+
+.sbiepay-mobileapp .detail-block .download-dtls h6 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #474a59;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+}
+
+.sbiepay-mobileapp .detail-block .download-dtls h6 .fa {
+    font-size: 12px;
+    color: #b8b9bd;
+    vertical-align: top;
+    padding-left: 5px;
+}
+
+.sbiepay-mobileapp .detail-block .download-dtls ul li {
+    display: inline-block;
+    padding-right: 19px;
+}
+
+.sbiepay-mobileapp .detail-block .download-dtls ul li img {
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .sbiepay-mobileapp {
+        padding-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 767px) {
+    .sbiepay-mobileapp {
+        border-top: 1px solid #00000010;
+    }
+    .sbiepay-mobileapp .ma-img img {
+        margin: 0 auto;
+    }
+}
+
+/* End sbiepay MobileApp*/
+
+/*-----------------------------------------------------------------------------------*/
+
+/*  2.9 sbiepay Timeline Style
+  /*-----------------------------------------------------------------------------------*/
+
+.sbiepay-tle-fnce {
+    background-image: url(../img/finance-bg.png);
+    background-repeat: no-repeat;
+    padding-bottom: 103px;
+}
+
+.sbiepay-timeline-block {
+    padding-top: 0px;
+}
+
+.sbiepay-timeline-block .header {
+    text-align: center;
+    padding-bottom: 33px;
+}
+
+.sbiepay-timeline-block .header .title-mn {
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.sbiepay-timeline-block .header p {
+    font-size: 20px;
+    color: #323545;
+    line-height: 1.4;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.cd-horizontal-timeline {
+    opacity: 0;
+    margin: 2em auto;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.cd-horizontal-timeline::before {
+    content: 'mobile';
+    display: none;
+}
+
+.cd-horizontal-timeline.loaded {
+    opacity: 1;
+}
+
+.cd-horizontal-timeline .timeline {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.cd-horizontal-timeline .events-wrapper {
+    position: relative;
+    height: 100%;
+    margin: 0 40px;
+    overflow: hidden;
+}
+
+.cd-horizontal-timeline .events-wrapper::after, .cd-horizontal-timeline .events-wrapper::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    height: 100%;
+    width: 20px;
+}
+
+.cd-horizontal-timeline .events {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 49px;
+    height: 2px;
+    background: #dfdfdf;
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.cd-horizontal-timeline .events a {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-bottom: 15px;
+    color: #383838;
+    text-decoration: none;
+    transform: translateZ(0);
+}
+
+.cd-horizontal-timeline .events li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    bottom: -5px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid #dfdfdf;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.cd-horizontal-timeline .events li a::before {
+    position: absolute;
+    border: 2px solid #e8e8e8;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 14px;
+    left: 4px;
+    top: 17.5px;
+    background-color: #f7f7f7;
+}
+
+.cd-horizontal-timeline .events li a {
+    font-size: 13px;
+    font-weight: 500;
+    color: #474a59;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cd-horizontal-timeline .events li.child a::before {
+    content: unset;
+}
+
+.no-touch .cd-horizontal-timeline .events a:hover::after {
+    background-color: #7b9d6f;
+    border-color: #7b9d6f;
+}
+
+.cd-horizontal-timeline .events a.selected {
+    pointer-events: none;
+}
+
+.cd-horizontal-timeline .events a.selected::after {
+    background-color: #00c6ff;
+    border-color: #00c6ff;
+}
+
+@media only screen and (min-width: 1100px) {
+    .cd-horizontal-timeline {
+        margin: 6em auto;
+    }
+    .cd-horizontal-timeline::before {
+        content: 'desktop';
+    }
+}
+
+.cd-timeline-navigation a {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    color: transparent;
+    white-space: nowrap;
+    transition: border-color 0.3s;
+}
+
+.cd-timeline-navigation a::after {
+    position: absolute;
+    left: 160%;
+    top: 91%;
+    bottom: auto;
+    transform: translateX(-50%) translateY(-50%);
+    right: auto;
+    width: 50px;
+    height: 47px;
+    font-size: 48px;
+    font-family: fontawesome;
+    content: "\f104";
+    z-index: 9999999;
+    color: #00c6ff;
+    background: linear-gradient(to right, #f7f9fa, transparent) !important;
+}
+
+.cd-timeline-navigation a.prev {
+    left: 0;
+    transform: rotate(0);
+    top: 16px;
+}
+
+.cd-timeline-navigation a.next {
+    right: 0;
+    top: 50px;
+    transform: rotate(180deg);
+}
+
+.no-touch .cd-timeline-navigation a:hover {
+    border-color: #7b9d6f;
+}
+
+.cd-timeline-navigation a.inactive {
+    cursor: not-allowed;
+}
+
+.cd-timeline-navigation a.inactive::after {
+    background-position: 0 -16px;
+}
+
+.no-touch .cd-timeline-navigation a.inactive:hover {
+    border-color: #dfdfdf;
+}
+
+.cd-horizontal-timeline .events-content {
+    position: relative;
+    width: 100%;
+    margin: 2em 0;
+    overflow: hidden;
+    -webkit-transition: height 0.4s;
+    -moz-transition: height 0.4s;
+    transition: height 0.4s;
+}
+
+.cd-horizontal-timeline .events-content li {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    padding: 0 5%;
+    opacity: 0;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+}
+
+.cd-horizontal-timeline .events-content li.selected {
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.cd-horizontal-timeline .events-content li.enter-right, .cd-horizontal-timeline .events-content li.leave-right {
+    animation-name: cd-enter-right;
+}
+
+.cd-horizontal-timeline .events-content li.enter-left, .cd-horizontal-timeline .events-content li.leave-left {
+    animation-name: cd-enter-left;
+}
+
+.cd-horizontal-timeline .events-content li.leave-right, .cd-horizontal-timeline .events-content li.leave-left {
+    animation-direction: reverse;
+}
+
+.cd-horizontal-timeline .events-content li>* {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cd-horizontal-timeline .events-content h2 {
+    font-weight: bold;
+    font-size: 2.6rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.cd-horizontal-timeline .events-content em {
+    display: block;
+    font-style: italic;
+    margin: 10px auto;
+}
+
+.cd-horizontal-timeline .events-content em::before {
+    content: '- ';
+}
+
+.cd-horizontal-timeline .events-content p {
+    font-size: 1.4rem;
+    color: #959595;
+}
+
+.cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
+    line-height: 1.6;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-horizontal-timeline .events-content h2 {
+        font-size: 7rem;
+    }
+    .cd-horizontal-timeline .events-content em {
+        font-size: 2rem;
+    }
+    .cd-horizontal-timeline .events-content p {
+        font-size: 1.8rem;
+    }
+}
+
+@-webkit-keyframes cd-enter-right {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@-moz-keyframes cd-enter-right {
+    0% {
+        opacity: 0;
+        -moz-transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateX(0%);
+    }
+}
+
+@keyframes cd-enter-right {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes cd-enter-left {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@-moz-keyframes cd-enter-left {
+    0% {
+        opacity: 0;
+        -moz-transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateX(0%);
+    }
+}
+
+@keyframes cd-enter-left {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+
+.sbiepay-timeline-block .cd-horizontal-timeline.loaded {
+    margin-bottom: 0px;
+}
+
+.tmline-main .inner-box_timeline {
+    display: none;
+}
+
+.tmline-main .inner-box_timeline.active {
+    display: block;
+}
+
+.cd-horizontal-timeline .events li.child a::after {
+    width: 10px;
+    height: 10px;
+    bottom: -4px;
+    border: 2px solid #dfdfdf;
+    background-color: #f8f8f8;
+}
+
+.cd-horizontal-timeline .events li.child a.selected::after {
+    width: 7px;
+    height: 7px;
+    bottom: -3px;
+    border: 2px solid #00ceff;
+    background-color: #00ceff;
+}
+
+.cd-horizontal-timeline .events li a.parent::after {
+    border: 2px solid #00ceff;
+    background-color: #00ceff;
+}
+
+.cd-horizontal-timeline .events li a.parent::before {
+    border: 2px solid #00ceff;
+}
+
+.inner-box_timeline {
+    width: 555px;
+    box-shadow: 0 0 33px #b8c7cc33;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 20px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-top: 20px;
+}
+
+.inner-box_timeline .top-dtls {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.inner-box_timeline .top-dtls h4 {
+    font-size: 21px;
+    color: #474a59;
+    font-weight: 500;
+    padding-top: 7px;
+    padding-bottom: 16px;
+}
+
+.inner-box_timeline .top-dtls p {
+    font-size: 17px;
+    color: #8388a3;
+    line-height: 1.4;
+}
+
+.inner-box_timeline #owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+}
+
+.inner-box_timeline #owl-demo .owl-dots {
+    position: absolute;
+    bottom: 22px;
+    width: 100%;
+    text-align: center;
+}
+
+.inner-box_timeline .carousel-indicators li {
+    background-color: #ffffff33;
+    width: 9px;
+    margin: 0 4px 0 0;
+    height: 9px;
+    border-color: transparent;
+    border-radius: 100%;
+}
+
+.carousel-indicators li {
+    background-color: #1da1f2;
+}
+
+.inner-box_timeline .carousel-indicators li.active {
+    background-color: #fff;
+    color: #000;
+    width: 9px;
+    margin: 0 4px 0 0;
+    border-color: #ffffff;
+    height: 9px;
+    border-radius: 21px;
+}
+
+.inner-box_timeline .transition-timer-carousel-progress-bar {
+    height: 4px;
+    background-color: #00c6ff;
+    /*progress bar color*/
+    width: 0;
+    margin: 0 0 0 0;
+    position: absolute;
+    border: none;
+    z-index: 11;
+}
+
+.inner-box_timeline .carousel .item img {
+    border-radius: 0 0 8px 8px;
+}
+
+@media screen and (max-width: 767px) {
+    .inner-box_timeline {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 767px) {
+    .sbiepay-tle-fnce {
+        border-top: 1px solid #00000010;
+    }
+}
+
+.sbiepay-finance {
+    padding-top: 135px;
+}
+
+.sbiepay-finance .header {
+    padding-right: 100px;
+    padding-bottom: 60px;
+}
+
+.sbiepay-finance .header .title-sm {
+    color: #ff8d41;
+}
+
+.header h4 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #474a59;
+    padding-top: 9px;
+    padding-bottom: 24px;
+}
+
+.btn-primary {
+    color: #fff;
+    background: linear-gradient(to right, #ff8d41, #cd5171);
+    border: unset;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 14px 32px;
+    border-radius: 24px;
+    margin-top: 6px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to left, #cd5171, #ff8d41);
+}
+
+.sbiepay-finance .finance-newsletter-box .fa {
+    font-size: 18px;
+    color: #fff;
+    padding-right: 12px;
+    vertical-align: sub;
+}
+
+@media screen and (max-width: 1024px) {
+    .sbiepay-finance .finance-box .finance-pts .fne-dtls {
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sbiepay-tle-fnce {
+        padding-bottom: 60px;
+    }
+    .sbiepay-finance .header {
+        padding-right: 0;
+    }
+    .sbiepay-finance .finance-box .finance-pts .fne-dtls {
+        padding-right: 0;
+    }
+    .sbiepay-finance .finance-box .finance-pts .fne-icon {
+        padding-right: 8px;
+    }
+    .sbiepay-finance .finance-newsletter-box h3 {
+        position: relative;
+        z-index: 99;
+    }
+    .sbiepay-finance .finance-newsletter-box .para-1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 5500px) and (min-width: 2000px) {
+    .sbiepay-tle-fnce {
+        background-size: 100% 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .sbiepay-finance .finance-newsletter-box .btn-primary {
+        width: 100%;
+    }
+}
+
+/*sbiepay light Finance and Timeline*/
+
+body.sbiepay-light_version .sbiepay-tle-fnce {
+    padding-bottom: 65px;
+    padding-top: 57px;
+}
+
+/* End sbiepay light Finance and Timeline*/
+
+/*-----------------------------------------------------------------------------------*/
+
+/*  2.10 sbiepay Team Style
+  /*-----------------------------------------------------------------------------------*/
+
+.crtyto-team {
+    background-image: url(../img/team-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 57px;
+}
+
+.crtyto-team .header {
+    text-align: center;
+    padding-bottom: 52px;
+}
+
+.crtyto-team .header .title-sm {
+    color: #6075e0;
+}
+
+.crtyto-team .header .title-mn {
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.crtyto-team .header p {
+    width: 80%;
+}
+
+.crtyto-team .team-block .img-tm img {
+    width: 182px;
+    height: 182px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.crtyto-team .team-block {
+    text-align: center;
+    padding-bottom: 47px;
+}
+
+.crtyto-team .team-block .img-tm {
+    width: 182px;
+    height: 182px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.crtyto-team .team-block .img-tm::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: linear-gradient(135deg, #00000210, #000d4c);
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.team-block .hvr-btn .fa {
+    position: absolute;
+    top: 33%;
+    right: -22px;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    background-color: #6075e0;
+    color: #fff;
+    padding-top: 16px;
+    border-radius: 38px;
+    padding-left: 2px;
+    transform: translateX(-30px);
+    visibility: hidden;
+    box-shadow: 3px 5px 18px #6075e050;
+    transition: all cubic-bezier(.68, -0.55, .27, 1.55) 0.4s;
+}
+
+.team-block:hover .fa {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.team-block h3 {
+    font-size: 21px;
+    color: #fff;
+    font-weight: 500;
+    padding-top: 29px;
+    padding-bottom: 15px;
+}
+
+.team-block h4 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFFFFF90;
+    padding-bottom: 22px;
+}
+
+.team-block .social li {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.team-block .social li:last-child {
+    padding-right: 0;
+}
+
+.team-block .social li .fa {
+    font-size: 17px;
+    color: #6075e0;
+    transition: all 0.4s;
+}
+
+.team-block .social li .fa:hover {
+    color: #bdd2ff;
+}
+
+.team-joining {
+    padding-top: 65px;
+}
+
+.team-joining .header a {
+    margin-top: 36px;
+    padding: 13px 32px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 27px;
+    background: linear-gradient(to right, #00c6ff, #5165cd);
+    border: none;
+}
+
+.team-joining .header a:hover {
+    background: linear-gradient(to right, #5165cd, #00c6ff);
+}
+
+@media screen and (max-width: 767px) {
+    .crtyto-team {
+        padding-top: 60px;
+    }
+    .sbiepay-faq .header p, .crtyto-team .header p {
+        width: 100%;
+    }
+}
+
+/*sbiepay Light Team*/
+
+body.sbiepay-light_version .crtyto-team {
+    background-image: unset;
+    padding-top: 97px;
+    padding-bottom: 50px;
+    border: 2px solid #f0f4f6;
+}
+
+body.sbiepay-light_version .crtyto-team .header .title-mn, body.sbiepay-light_version .team-block h3 {
+    color: #474a59;
+}
+
+body.sbiepay-light_version .crtyto-team .team-block .img-tm::before {
+    background: linear-gradient(135deg, #00000210, #002aff);
+    border-radius: 20px;
+}
+
+body.sbiepay-light_version .crtyto-team .team-block .img-tm img {
+    border-radius: 20px;
+}
+
+/* End sbiepay Light Team*/
+
+/*-----------------------------------------------------------------------------------*/
+
+/*  2.11 sbiepay Joining-Team Style
+  /*-----------------------------------------------------------------------------------*/
+
+body.sbiepay-light_version .team-joining {
+    padding-top: 97px;
+    background-color: #f7f9fa;
+    padding-bottom: 100px;
+}
+
+body.sbiepay-light_version .team-joining .header {
+    text-align: center;
+}
+
+body.sbiepay-light_version .team-joining .header p {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #8388a3;
+    width: 80%;
+    margin: 0 auto;
+}
+
+body.sbiepay-light_version .team-joining .header h3 {
+    color: #6075e0;
+}
+
+/* End sbiepay Light Joining Team*/
+
+/*-----------------------------------------------------------------------------------*/
+
+/*  2.12 sbiepay FAQS Style
+  /*-----------------------------------------------------------------------------------*/
+
+.sbiepay-faq {
+    padding-bottom: 100px;
+    padding-top: 25px;
+    background-color: #000061;
+       
+}
+
+.sbiepay-faq .header {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.sbiepay-faq .header .title-mn {
+    padding-top: 9px;
+    padding-bottom: 24px;
+}
+
+.sbiepay-faq .header p, .crtyto-team .header p {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #353744;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.sbiepay-faq .nav-tabs li {
+    float: unset;
+}
+
+.sbiepay-faq .nav-tabs li.active a {
+    color: #00c6ff !important;
+}
+
+.sbiepay-faq .nav-tabs li.active .fa {
+    display: block;
+}
+
+.sbiepay-faq .nav-tabs li .fa {
+    margin-top: 7px;
+    display: none;
+}
+
+.sbiepay-faq .nav-tabs li a {
+    font-size: 21px;
+    font-weight: 500;
+    padding: 0 15px;
+    color: #474a59 !important;
+    margin-bottom: 20px;
+}
+
+.sbiepay-faq .nav-tabs li a {
+    border: none;
+}
+
+.sbiepay-faq .question {
+    font-size: 18px;
+    font-weight: 500;
+    color: #474a59;
+    padding-bottom: 15px;
+}
+
+.sbiepay-faq .tab-content p {
+    font-size: 17px;
+    color: #8388a3;
+    line-height: 1.4;
+}
+
+.sbiepay-faq .tab-content .main-para {
+    padding-bottom: 22px;
+}
+
+.sbiepay-faq .tab-content .sub-para {
+    padding-bottom: 45px;
+}
+
+.sbiepay-faq .tab-content {
+    margin-top: 9px;
+}
+
+.sbiepay-faq .tab-content a span {
+    vertical-align: middle;
+}
+
+.sbiepay-faq .tab-content a .fa {
+    font-size: 16px;
+    padding-left: 9px;
+}
+
+.sbiepay-faq .tab-content .btn-primary {
+    background-color: transparent;
+    border: transparent;
+    padding: 0;
+    transition: all 0.4s;
+}
+
+.sbiepay-faq .tab-content .btn-primary:hover {
+    color: #444;
+    background-color: transparent;
+    border: transparent;
+}
+
+.sbiepay-faq .nav-tabs {
+    border-bottom: unset;
+}
+
+.sbiepay-faq .nav-tabs>li.active>a, .sbiepay-faq .nav-tabs>li.active>a:focus, .sbiepay-faq .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: none;
+}
+
+.sbiepay-faq .nav>li>a:focus, .sbiepay-faq .nav>li>a:hover {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+    .sbiepay-faq {
+        padding-top: 70px;
+    }
+    .sbiepay-faq .nav-tabs li .fa {
+        transform: rotate(90deg);
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 767px) {
+    .sbiepay-faq .nav-tabs {
+        border-bottom: 1px solid #00000010;
+    }
+}
+
+/*sbiepay Light FAQS*/
+
+body.sbiepay-light_version .sbiepay-faq {
+    background-color: #f7f9fa;
+}
+
+body.sbiepay-light_version .sbiepay-faq .nav-tabs li a, body.sbiepay-light_version .sbiepay-faq .nav-tabs li a:hover, body.sbiepay-light_version .sbiepay-faq .nav-tabs li a:focus, body.sbiepay-light_version .sbiepay-faq .nav-tabs li a:active {
+    background-color: #f7f9fa;
+}
+
+body.sbiepay-light_version .sbiepay-faq {
+    padding-bottom: 95px;
+    padding-top: 97px;
+}
+
+/* End sbiepay Light FAQS*/
+
+/*-----------------------------------------------------------------------------------*/
+
+/*  2.13 sbiepay Contact Style
+  /*-----------------------------------------------------------------------------------*/
+
+.sbiepay-contact {
+    background-image: url(../img/feature-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.spacing_block p {
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.sbiepay-contact {
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+
+.contact-description {
+    text-align: left;
+}
+
+.contact-descri {
+    text-align: left;
+    color: #353744;
+    margin-bottom: 5px;
+}
+
+.sbiepay-contact .header {
+    text-align: center;
+}
+
+.sbiepay-contact .title-mn {
+    padding-top: 15px;
+    padding-bottom: 34px;
+}
+
+.sbiepay-contact p {
+    font-size: 15px;
+    color: #353744;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.sbiepay-contact .row.spacing_block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sbiepay-contact .contact {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sbiepay-contact .contact .ico {
+    width: 45px;
+    height: 45px;
+    background-color: #000061;
+    display: inline-block;
+    border-radius: 28px;
+    color: #fff;
+    font-size: 25px;
+    padding-top: 9px;
+    padding-left: 1px;
+}
+
+.sbiepay-contact .mail-dtls .ico {
+    padding-top: 12px;
+}
+
+.sbiepay-contact .contact a {
+    text-decoration: none;
+    vertical-align: super;
+}
+
+.sbiepay-contact .contact h4 {
+    display: inline-block;
+    font-size: 18px;
+    color: #8388a3;
+    padding-left: 0px;
+    transition: all 0.4s;
+}
+
+.sbiepay-contact .contact h4:hover {
+    color: #444444;
+}
+
+.sbiepay-contact .contact-form {
+    width: 460px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.sbiepay-contact .contact-form label {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-bottom: 19px;
+}
+
+.sbiepay-contact .contact-form form .form-group {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+}
+
+.sbiepay-contact .contact-form form .form-group .form-control:focus+label {
+    color: #3dc576;
+}
+
+.sbiepay-contact .contact-form form .form-control {
+    height: 48px;
+    padding: 6px 21px;
+    font-size: 16px;
+    color: #474a59;
+    background-color: #fff;
+    border: 1px solid #e3eaec;
+    border-radius: 24px;
+    box-shadow: unset;
+}
+
+.sbiepay-contact .contact-form form .form-group .form-control::placeholder {
+    color: #8388a3 !important;
+}
+
+.sbiepay-contact .contact-form form .text {
+    height: 147px;
+    padding: 14px 22px;
+    resize: none;
+}
+
+.sbiepay-contact .contact-form form .form-btn {
+    float: right;
+}
+
+.sbiepay-contact .contact-form form .form-btn .btn-default {
+    color: #fff;
+    background: linear-gradient(to right, #00c6ff, #5165cd);
+    border: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 14px 33px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 28px;
+}
+
+.sbiepay-contact .contact-form form .form-btn .btn-default:hover {
+    background: linear-gradient(to right, #008696, #3dc576);
+}
+
+@media screen and (max-width: 767px) {
+    .sbiepay-contact {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+    .sbiepay-contact .contact {
+        text-align: unset;
+        margin-bottom: 10px;
+    }
+    .sbiepay-contact .contact .ico {
+        text-align: center;
+    }
+    .sbiepay-contact .row.spacing_block {
+        padding-bottom: 20px;
+    }
+    .sbiepay-contact .contact-map #map {
+        height: 300px;
+    }
+    .sbiepay-contact .contact-form {
+        width: 100%;
+    }
+    .sbiepay-contact .contact-form form .form-btn {
+        float: unset;
+        text-align: center;
+    }
+    .sbiepay-contact .contact-form form .form-btn .btn-default {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 767px) {
+    .sbiepay-contact .contact .ico {
+        margin-bottom: 15px;
+    }
+    .sbiepay-contact .contact-map #map {
+        height: 400px;
+    }
+    .sbiepay-contact .contact-form {
+        width: 100%;
+        margin: 0;
+    }
+    .sbiepay-contact .contact-form form .form-btn {
+        float: left;
+    }
+    .sbiepay-contact {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+}
+
+/*sbiepay Light Contact*/
+
+body.sbiepay-light_version .sbiepay-contact {
+    padding-bottom: 140px;
+    padding-top: 98px;
+}
+
+@media screen and (max-width:767px) {
+    body.sbiepay-light_version .sbiepay-contact {
+        padding-bottom: 70px;
+    }
+}
+
+/* End sbiepay Light Contact*/
+
+/*-----------------------------------------------------------------------------------*/
+
+/*  2.14 sbiepay Footer Style
+  /*-----------------------------------------------------------------------------------*/
+
+.sbiepay-footer {
+    background-image: url(../img/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.sbiepay-footer .footer-top {
+    padding-bottom: 95px;
+}
+
+.sbiepay-footer .footer-logo, .sbiepay-footer .social-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sbiepay-footer .footer-logo {
+    padding-right: 25px;
+}
+
+.sbiepay-footer .social-icon {
+    padding-left: 20px;
+    position: relative;
+    z-index: 99;
+}
+
+.sbiepay-footer .social-icon li {
+    display: inline-block;
+    padding-right: 14px;
+}
+
+.sbiepay-footer .social-icon::before {
+    border-left: 1px solid #ffffff12;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0px;
+    position: absolute;
+    z-index: -1;
+}
+
+.sbiepay-footer .col-md-12 .col-md-6.remspa {
+    padding-left: 0;
+}
+
+.sbiepay-footer .social-icon li .fa {
+    color: #8388a3;
+    font-size: 17px;
+    transition: all 0.4s;
+}
+
+.sbiepay-footer .social-icon li .fa:hover {
+    color: #fff;
+}
+
+.sbiepay-footer .dropdown img {
+    float: left;
+}
+
+.sbiepay-footer .dropdown .dropdown-menu {
+    min-width: 85px;
+    margin: 11px 6px 0;
+    left: -45px;
+}
+
+.sbiepay-footer .dropdown .dropdown-menu a {
+    text-align: center;
+}
+
+.sbiepay-footer .dropdown .glyphicon {
+    color: #fff;
+    font-size: 8px;
+    padding-left: 10px;
+}
+
+.sbiepay-footer .footer-lang {
+    float: right;
+}
+
+.links .footer-link li a {
+    text-decoration: none;
+    transition: all 0.4s;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.links .footer-link li a:hover {
+    color: #D5DAF5;
+}
+
+.links .footer-link li {
+    display: inline-block;
+    padding: 15px 90px;
+}
+
+.download-link {
+    padding-top: 30px;
+}
+
+.download-link h3 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.download-block {
+    padding-top: 23px;
+}
+
+.download-block li {
+    display: inline-block;
+    padding-right: 18px;
+}
+
+.download-block li img {
+    border-radius: 4px;
+    width: 139px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.footer-news {
+    padding-right: 5px;
+}
+
+.footer-news h3, .footer-subc h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-news img {
+    width: 50px !important;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+    display: inline-block !important;
+    margin-right: 8px;
+}
+
+.footer-middle .input-group-btn {
+    z-index: 3;
+}
+
+.footer-news .item {
+    padding-top: 21px;
+}
+
+.footer-news .item .dtls {
+    font-size: 17px;
+    color: #8388a3;
+    line-height: 1.4;
+    padding-top: 40px;
+}
+
+.footer-news .news-title {
+    display: inline-block;
+    padding-top: 7px;
+    vertical-align: top;
+}
+
+.footer-news .news-title h4 {
+    font-size: 15px;
+    color: #fff;
+    padding-bottom: 6px;
+}
+
+.footer-news .news-title h5 a {
+    text-decoration: none;
+    color: #00c6ff;
+}
+
+.footer-news .news-title h5 {
+    font-size: 15px;
+}
+
+.footer-news .date {
+    font-size: 15px;
+    color: #fff;
+    padding-top: 11px;
+}
+
+.footer-news .owl-nav {
+    display: block !important;
+}
+
+.footer-news .owl-prev, .footer-news .owl-next {
+    transform: rotate(90deg);
+}
+
+.footer-news .owl-prev, .footer-news .owl-next {
+    position: absolute;
+    top: -20px;
+}
+
+.footer-news .owl-next {
+    right: 10px;
+}
+
+.footer-news .owl-prev {
+    right: 27px;
+}
+
+.footer-news .owl-prev span, .footer-news .owl-next span {
+    font-size: 26px;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.footer-subc p {
+    padding-top: 20px;
+    line-height: 1.4;
+    color: #fff;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.footer-subc .input-group {
+    display: block;
+}
+
+.footer-subc .btn-default {
+    color: #333;
+    background: linear-gradient(to right, #ff8d41, #cd5171);
+    border: none;
+    height: 49px;
+    border-radius: 39px;
+    border-top-left-radius: 39px !important;
+    border-bottom-left-radius: 39px !important;
+    padding: 6px 16px;
+    margin-left: -55px !important;
+    margin-top: 4px;
+    z-index: 999999 !important;
+    box-shadow: 1px 2px 16px #ff8d4180;
+}
+
+.footer-subc .btn-default:hover {
+    background: linear-gradient(to right, #cd5171, #ff8d41);
+}
+
+.footer-subc .btn-default .fa {
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer-subc .form-control {
+    height: 59px;
+    padding: 2px 30px;
+    font-size: 15px;
+    color: #474a59;
+    background-image: none;
+    border: none;
+    border-radius: 29px;
+    border-top-right-radius: 29px !important;
+    border-bottom-right-radius: 29px !important;
+    box-shadow: unset;
+}
+
+.footer-subc .form-control::placeholder {
+    color: #8388a3;
+}
+
+.footer-bottom {
+    float: left;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.pvy-lnk.pull-right li {
+    display: inline-block;
+}
+
+.pvy-lnk.pull-right li:first-child {
+    border-right: 1px solid #ffffff30;
+    padding-right: 15px;
+}
+
+.pvy-lnk.pull-right li:last-child {
+    padding-left: 15px;
+}
+
+.pvy-lnk.pull-right li a, .cr-txt.pull-left h3 {
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+}
+
+.pvy-lnk.pull-right li a:hover {
+    transition: all 0.4s;
+    color: #8388a3;
+}
+
+@media screen and (max-width: 359px) {
+    .sbiepay-footer .social-icon {
+        padding-left: 0px;
+        display: inline-block;
+        margin: 15px 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sbiepay-footer {
+        padding-top: 40px;
+    }
+    .sbiepay-footer .col-md-12 .col-md-6.remspa {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .sbiepay-footer .footer-logo {
+        width: 130px;
+        height: 25px;
+        object-fit: contain;
+    }
+    .sbiepay-footer .footer-logo {
+        padding-right: 10px;
+    }
+    .sbiepay-footer .footer-lang {
+        float: left;
+        margin-top: 20px;
+    }
+    .links .footer-link li {
+        width: 49%;
+    }
+    .download-link {
+        padding-bottom: 30px;
+    }
+    .sbiepay-footer .footer-subc {
+        padding-top: 45px;
+    }
+    .footer-bottom .cr-txt, .footer-bottom .pvy-lnk {
+        float: unset !important;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 767px) {
+    .sbiepay-footer .footer-logo {
+        padding-right: 10px;
+    }
+    .sbiepay-footer .social-icon {
+        padding-left: 10px;
+    }
+    .sbiepay-footer .social-icon li {
+        padding-right: 10px;
+    }
+    .sbiepay-footer .footer-subc {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 0px;
+        margin-top: 45px;
+        max-width: 100%;
+    }
+    .footer-subc .btn-default {
+        margin-left: -60px !important;
+        margin-top: 5px;
+    }
+}
+
+/*Light Footer CSS*/
+
+body.sbiepay-light_version .sbiepay-footer {
+    background-image: url(../img/light-footer-img.png);
+    padding-top: 18px;
+}
+
+body.sbiepay-light_version .sbiepay-footer .social-icon li .fa {
+    color: #bbc4c7;
+}
+
+body.sbiepay-light_version .sbiepay-footer .social-icon li .fa:hover {
+    color: #323545;
+    transition: all 0.4s;
+}
+
+body.sbiepay-light_version .links .footer-link li a:hover, body.sbiepay-light_version .pvy-lnk.pull-right li a:hover {
+    color: #323545;
+}
+
+body.sbiepay-light_version .sbiepay-footer .social-icon::before {
+    border-left: 1px solid #e9e9eb;
+}
+
+body.sbiepay-light_version .footer-news h3, body.sbiepay-light_version .footer-subc h3, body.sbiepay-light_version .footer-news .news-title h4, body.sbiepay-light_version .download-link h3 {
+    color: #474a59;
+}
+
+body.sbiepay-light_version .footer-news .owl-prev span, body.sbiepay-light_version .footer-news .owl-next span {
+    color: #8b90a9;
+    font-weight: 300;
+}
+
+body.sbiepay-light_version .footer-news .date, body.sbiepay-light_version .footer-subc p, body.sbiepay-light_version .pvy-lnk.pull-right li a, body.sbiepay-light_version .cr-txt.pull-left h3, body.sbiepay-light_version .sbiepay-footer .dropdown .glyphicon {
+    color: #8388a3;
+}
+
+body.sbiepay-light_version .pvy-lnk.pull-right li:first-child {
+    border-right: 1px solid #8388a3;
+}
+
+body.sbiepay-light_version .footer-subc .form-control {
+    border: 1px solid #e3eaec;
+}
+
+section.sbiepayblog-banner .banner-blog-detail {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 190px;
+    padding-bottom: 57px;
+}
+
+section.sbiepayblog-banner .banner-blog-detail h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 15px;
+}
+
+section.sbiepayblog-banner .banner-blog-detail .input-group {
+    width: 360px;
+    margin: 0 auto;
+    padding-top: 61px;
+}
+
+section.sbiepayblog-banner .banner-blog-detail .form-control {
+    height: 47px;
+    padding: 0px 25px 2px 53px;
+    font-size: 16px;
+    color: #737380;
+    background-image: none;
+    border-radius: 29px;
+    border-top-right-radius: 29px !important;
+    border-bottom-right-radius: 29px !important;
+    box-shadow: unset;
+    background-color: #171a2e50;
+    border-color: #171a2e;
+    margin-left: -15px;
+}
+
+section.sbiepayblog-banner .banner-blog-detail .form-control::placeholder {
+    color: #5a6081;
+}
+
+section.sbiepayblog-banner .banner-blog-detail .btn-default {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    margin-top: 4px;
+    top: 1px;
+    left: -3px;
+    width: 41px;
+    height: 45px;
+    z-index: 999;
+}
+
+section.sbiepayblog-banner .banner-blog-detail .fa {
+    color: #fff;
+    font-size: 17px;
+    margin-top: -2px;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 767px) {
+    section.sbiepayblog-banner .banner-blog-detail .input-group {
+        width: 100%;
+    }
+    section.sbiepayblog-banner .banner-blog-detail .btn-default {
+        top: 0px;
+        left: 10px;
+    }
+    section.sbiepayblog-banner .banner-blog-detail .form-control {
+        margin-left: 0;
+    }
+    section.sbiepayblog-banner .banner-blog-detail {
+        padding-top: 150px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+    section.sbiepayblog-banner .banner-blog-detail {
+        padding-top: 150px;
+    }
+}
+
+/*End*/
+
+/*Crytpo Blog Styles*/
+
+.blog-wrapper-main hr.hr-blog {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 3px solid #00c6ff;
+}
+
+.blog-box-hr {
+    padding-bottom: 30px;
+}
+
+.blog-wrapper-main a {
+    text-decoration: none;
+}
+
+.blog-box-hr .blog-img img {
+    height: 277px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-box-hr .blog-dtls {
+    background-color: #fff;
+    padding: 36px 40px 33px 38px;
+}
+
+ul.tag-date {
+    padding-bottom: 5px;
+}
+
+ul.tag-date li {
+    display: inline-block;
+}
+
+.tle-tags, .tle-date {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #00c6ff;
+    position: relative;
+    padding-right: 15px;
+}
+
+.tle-date {
+    color: #8388a3;
+}
+
+.tle-tags::before {
+    position: absolute;
+    top: 6px;
+    right: 3px;
+    color: #b8b9bd;
+    font-family: fontawesome;
+    content: "\f111";
+    font-size: 4px;
+}
+
+.tle-mn {
+    font-size: 24px;
+    font-weight: 500;
+    color: #474a59;
+    line-height: 1.3;
+}
+
+.tle-mn:hover {
+    transition: all 0.4s;
+    color: #d1566d;
+}
+
+.blog-dtls p.tle-para, .blog-simple-dtl .blog-smple .tle-para {
+    padding-top: 20px;
+    padding-bottom: 44px;
+}
+
+.tle-para {
+    font-size: 17px;
+    color: #474a59;
+    line-height: 1.4;
+}
+
+.btn1 {
+    padding: 6px 263px;
+}
+
+/*Top Scroll Button starts*/
+
+.scroll-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #000066;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    opacity: 0.5;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/*Top Scroll Button ends*/
+
+.blog-wrapper-main .blog-mr-btn {
+    background-color: transparent;
+    border: transparent;
+    padding: 0;
+    transition: all 0.4s;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #00c6ff;
+}
+
+.blog-wrapper-main .blog-mr-btn:hover {
+    color: #444444;
+    transition: all ease 0.4s;
+}
+
+.blog-wrapper-main a.blog-mr-btn .fa {
+    font-size: 16px;
+    padding-left: 9px;
+}
+
+.blog-wrapper-main a.blog-mr-btn {
+    vertical-align: middle;
+}
+
+/*Vertical Detailed and Vertical Normal Blog*/
+
+.blog-box-vr-dtls, .blog-box-vr, .blog-simple-dtl, .blog-quote-block, .video-blog-block, .audio-blog-block, .blog-lnk-block {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+.blog-box-vr-dtls .img-vr, .blog-box-vr .img-vr, .video-blog-block .img-vr {
+    float: left;
+    width: 35%;
+}
+
+.blog-box-vr-dtls .vr-dtls, .blog-box-vr .vr-dtls, .video-blog-block .vr-dtls {
+    float: left;
+    width: 65%;
+    padding: 32px 35px 0 38px;
+}
+
+.blog-box-vr-dtls .img-vr img, .blog-box-vr .img-vr img, .video-blog-block .img-vr img {
+    height: 265px;
+    width: 265px;
+    object-fit: cover;
+}
+
+.blog-box-vr-dtls hr.hr-blog, .blog-box-vr hr.hr-blog, .video-blog-block hr.hr-blog {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 3px solid #00c6ff;
+    width: 65%;
+    margin-left: 0;
+}
+
+.blog-box-vr-dtls .tle-para, .video-blog-block .tle-para {
+    padding-top: 19px;
+    padding-bottom: 21px;
+}
+
+.blog-box-vr a {
+    text-decoration: none;
+}
+
+.blog-box-vr .vr-dtls .tle-mn {
+    padding-bottom: 34px;
+}
+
+@media screen and (max-width: 767px) {
+    .blog-box-vr-dtls .vr-dtls, .blog-box-vr .vr-dtls, .video-blog-block .vr-dtls {
+        float: unset;
+        width: 100%;
+        padding: 32px 35px 22px 30px;
+    }
+    .blog-box-vr-dtls .img-vr img, .blog-box-vr .img-vr img, .video-blog-block .img-vr img {
+        width: 100%;
+    }
+    .blog-box-vr-dtls .img-vr, .blog-box-vr .img-vr, .video-blog-block .img-vr {
+        float: unset;
+        width: 100%;
+    }
+    .blog-box-vr-dtls hr.hr-blog, .blog-box-vr hr.hr-blog, .video-blog-block hr.hr-blog {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+    .blog-box-vr-dtls hr.hr-blog, .blog-box-vr hr.hr-blog, .video-blog-block hr.hr-blog {
+        width: 468px;
+    }
+}
+
+/*Simple Blog Style*/
+
+.blog-simple-dtl .blog-smple {
+    padding: 33px 35px 35px 40px;
+}
+
+/*Quote Blog*/
+
+.blog-quote-block .quote-box {
+    padding: 35px 35px 35px 105px;
+    position: relative;
+}
+
+.quote-box::before {
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    content: "\f10d";
+    font-family: fontawesome;
+    font-size: 39px;
+    color: #ccd3db;
+}
+
+.blog-quote-block .tle-date.quote::before {
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    content: "-";
+    font-size: 23px;
+}
+
+.blog-quote-block .tle-date.quote {
+    position: relative;
+    padding: 13px 0 22px 14px;
+}
+
+@media screen and (max-width: 767px) {
+    .blog-quote-block .quote-box {
+        padding: 35px 35px 35px 40px;
+    }
+    .quote-box::before {
+        top: 1%;
+        left: 2%;
+        font-size: 31px;
+    }
+}
+
+/*Video Blog*/
+
+.video-blog-block .img-vr {
+    position: relative;
+}
+
+.video-blog-block .img-vr .video-blg {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.video-blog-block .img-vr .video-blg .fa {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -moz-background-clip: text;
+    font-size: 88px;
+    background-image: linear-gradient(to left bottom, #cccc, #ffffff);
+}
+
+.video-blog-block .img-vr .video-blg .fa:hover {
+    background-image: linear-gradient(to left bottom, #ffffff, #cccc);
+}
+
+/*Audio Blog*/
+
+.audio-blog-block .audio-box {
+    padding: 33px 40px 35px 41px;
+}
+
+.audio-blog-block .audio-box .tle-mn {
+    padding-bottom: 12px;
+}
+
+.audio-blog-block .audio-box .blog-mr-btn {
+    margin-top: 21px;
+}
+
+.audio-blog-block .audio.green-audio-player {
+    width: 100%;
+    min-width: 300px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+    .audio-blog-block .audio.green-audio-player {
+        min-width: auto;
+    }
+}
+
+.audio-blog-block .audio.green-audio-player .play-pause-btn {
+    cursor: pointer;
+}
+
+.audio-blog-block .audio.green-audio-player .play-pause-btn svg {
+    background-color: #00c6ff;
+    padding: 2px 14px 1px 18px;
+    border-radius: 32px;
+}
+
+.audio-blog-block .audio.green-audio-player .spinner {
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/audio-loading.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: spin 0.4s linear infinite;
+}
+
+.audio-blog-block .audio.green-audio-player .slider {
+    flex-grow: 1;
+    background-color: #D8D8D8;
+    cursor: pointer;
+    position: relative;
+}
+
+.audio-blog-block .audio.green-audio-player .slider .progress {
+    background-color: #44BFA3;
+    border-radius: inherit;
+    position: absolute;
+    overflow: unset;
+    pointer-events: none;
+    margin-bottom: 0;
+}
+
+.audio-blog-block .audio.green-audio-player .slider .progress .pin {
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background-color: #00c6ff;
+    position: absolute;
+    pointer-events: all;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.32);
+}
+
+.audio-blog-block .audio.green-audio-player .controls {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #55606E;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.audio-blog-block .audio.green-audio-player .controls .slider {
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 2px;
+    height: 4px;
+}
+
+.audio-blog-block .audio.green-audio-player .controls .slider .progress {
+    width: 0;
+    height: 100%;
+}
+
+.audio-blog-block .audio.green-audio-player .controls .slider .progress .pin {
+    right: -8px;
+    top: -6px;
+}
+
+.audio-blog-block .audio.green-audio-player .controls span {
+    cursor: default;
+}
+
+.audio-blog-block .audio.green-audio-player .volume {
+    position: relative;
+}
+
+.audio-blog-block .audio.green-audio-player .volume .volume-btn {
+    cursor: pointer;
+}
+
+.audio-blog-block .audio.green-audio-player .volume .volume-btn.open path {
+    fill: #44BFA3;
+}
+
+.audio-blog-block .audio.green-audio-player .volume .volume-controls {
+    width: 30px;
+    height: 135px;
+    background-color: rgba(0, 0, 0, 0.62);
+    border-radius: 7px;
+    position: absolute;
+    left: -3px;
+    bottom: 52px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.audio-blog-block .audio.green-audio-player .volume .volume-controls.hidden {
+    display: none;
+}
+
+.audio-blog-block .audio.green-audio-player .volume .volume-controls .slider {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 6px;
+    border-radius: 3px;
+}
+
+.audio-blog-block .audio.green-audio-player .volume .volume-controls .slider .progress {
+    bottom: 0;
+    height: 100%;
+    width: 6px;
+}
+
+.audio-blog-block .audio.green-audio-player .volume .volume-controls .slider .progress .pin {
+    left: -5px;
+    top: -8px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateZ(0);
+    }
+    to {
+        transform: rotateZ(1turn);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .audio-blog-block .audio-box {
+        padding: 20px 39px 34px 17px;
+    }
+}
+
+/*Link Blog*/
+
+.blog-lnk-block .link-box {
+    padding: 31px 35px 36px 39px;
+}
+
+.blog-lnk-block .link-box .lnk-txt p {
+    font-size: 17px;
+    color: #00c6ff;
+    padding-top: 22px;
+    text-decoration: underline;
+    padding-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    .blog-lnk-block .link-box .lnk-txt p {
+        line-height: 1.2;
+        word-wrap: break-word;
+    }
+}
+
+/*Pagination Style*/
+
+.pagination-tab .pagination a.active {
+    background-color: #00c6ff;
+    color: white;
+    padding: 7px 14px;
+}
+
+.pagination-tab .pagination {
+    margin: 10px 0;
+}
+
+.pagination-tab .pagination a .fa {
+    padding: 0 2px;
+}
+
+.pagination-tab .pagination a:hover {
+    background-color: #121929;
+}
+
+.pagination-tab .pagination>li>a, .pagination-tab .pagination>li>span {
+    padding: 7px 14px;
+    margin-left: -1px;
+    margin-top: -1px;
+    margin-right: 12px;
+    border-radius: 38px;
+    color: #ffffff;
+    background-color: transparent;
+    border: transparent;
+}
+
+@media screen and (max-width: 767px) {
+    .pagination-tab .pagination>li>a, .pagination-tab .pagination>li>span {
+        margin-right: 3px;
+    }
+}
+
+/*End Crytpo Blog Styles*/
+
+/*-----------------------------------------------------------------------------------*/
+
+/*  4.0 sbiepay Blog Sidebar Style
+  /*-----------------------------------------------------------------------------------*/
+
+.sidebar-box-nsltr {
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 29px;
+}
+
+hr.sidebar-hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    border-top-width: 0px;
+    border-top-style: none;
+    border-top-color: currentcolor;
+    border-top: 3px solid #ff934b;
+}
+
+.detail-block {
+    text-align: justify;
+}
+
+.sidebar-cnt {
+    background-color: #fff;
+}
+
+.sidebar-about-block hr.sidebar-hr {
+    border-top: 3px solid #3dc576;
+}
+
+.sidebar-about-block .sidebar-about {
+    padding-top: 35px;
+}
+
+.sidebar-about-block .sidebar-about h3 {
+    text-align: center;
+}
+
+.sidebar-about-block .sidebar-about .tle-para {
+    padding: 0 28px;
+}
+
+.sidebar-about-block .sdbr-scl-icns {
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 28px;
+}
+
+.sidebar-about-block .sdbr-scl-icns li {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.sidebar-about-block .sdbr-scl-icns li:last-child {
+    padding-right: 0;
+}
+
+.sidebar-about-block .sdbr-scl-icns li .fa {
+    color: #d1d9dc;
+    font-size: 17px;
+    transition: all 0.4s;
+}
+
+.sidebar-about-block .sdbr-scl-icns li .fa:hover {
+    color: #474a59;
+    font-size: 17px;
+}
+
+.sidebar-category {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.sidebar-category::before {
+    position: absolute;
+    border-top: 1px solid #e3eaec;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 85%;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sidebar-category h3 {
+    text-align: center;
+}
+
+.sidebar-category .ctg-lst li a {
+    font-size: 17px;
+    color: #474a59;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.sidebar-category .ctg-lst li a:hover {
+    color: #3dc576;
+}
+
+.sidebar-category .ctg-lst li {
+    padding-bottom: 15px;
+    transition: all 0.4s;
+    position: relative;
+}
+
+.sidebar-category .ctg-lst {
+    padding-left: 60px;
+}
+
+.sidebar-category .ctg-lst li::before {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    font-family: fontawesome;
+    content: "\f0da";
+    color: #ccd3db;
+    transition: all 0.4s;
+}
+
+.sidebar-category .ctg-lst li:hover::before {
+    color: #3dc576;
+}
+
+.sidebar-category .vw-btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Montserrat;
+    color: #3dc576;
+}
+
+.sidebar-category .vw-btn span {
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .sidebar-box-nsltr {
+        margin-top: 20px;
+    }
+    .sidebar-newsletter .form-group .form-control {
+        width: 100%;
+    }
+    body.blog-main header.crpto-header .navbar-default .navbar-brand::before {
+        content: unset;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+    .sidebar-box-nsltr {
+        margin-top: 20px;
+    }
+    .sidebar-newsletter .form-group .form-control {
+        width: 100%;
+    }
+    .sidebar-newsletter {
+        background-size: 100% 2%;
+    }
+}
+
+/*End sbiepay Sidebar*/
+
+/*-----------------------------------------------------------------------------------*/
+
+/*  5.0 sbiepay Blog DetailPage Style
+  /*-----------------------------------------------------------------------------------*/
+
+.detailed-box {
+    background-color: #fff;
+}
+
+.blog_detailed-block a {
+    text-decoration: none;
+}
+
+.inner-dtld-blog {
+    padding: 34px 25px 39px 40px;
+}
+
+hr.dtld-bg {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 3px solid #00c6ff;
+}
+
+.blog-hd {
+    padding: 30px 40px 33px 37px;
+}
+
+.blog-hd .tag-dtld {
+    float: left;
+    width: 100%;
+    padding-bottom: 6px;
+}
+
+.blog-hd .tag-dtld li {
+    display: inline-block;
+}
+
+.blog-hd .tag-dtld li h3, .blog-hd .tag-dtld li h4 {
+    display: inline-block;
+    position: relative;
+}
+
+.blog-hd .tag-dtld li:first-child {
+    float: left;
+}
+
+.blog-hd .tag-dtld li:last-child {
+    float: right;
+}
+
+.blog-hd .tag-dtld li h3 a::before {
+    position: absolute;
+    top: 6px;
+    right: 3px;
+    color: #b8b9bd;
+    font-family: fontawesome;
+    content: "\f111";
+    font-size: 4px;
+}
+
+.blog-hd .tag-dtld li h3 a, .blog-hd .tag-dtld li h4 a, .blog-hd .tag-dtld li a h5 {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #00c6ff;
+    position: relative;
+    padding-right: 15px;
+}
+
+.blog-hd .tag-dtld li h4 a, .blog-hd .tag-dtld li a h5 {
+    color: #8388a3;
+}
+
+.blog-hd .tag-dtld li a h5 {
+    padding-right: 0;
+}
+
+.blog-hd .tag-dtld li a h5 span.numm {
+    color: #474a59;
+    padding-right: 6px;
+}
+
+.blg-img img {
+    height: 425px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.inner-dtld-blog .quote-box {
+    position: relative;
+    padding: 24px 44px 0px 58px;
+}
+
+.inner-dtld-blog .quote-box::before {
+    left: 0%;
+}
+
+.inner-dtld-blog .quote-box .tle-mn {
+    padding-bottom: 13px;
+}
+
+.inner-dtld-blog .tle-mn:hover {
+    color: #474a59;
+}
+
+.tle-para2.s2 {
+    font-size: 17px;
+    color: #474a59;
+    line-height: 1.4;
+    padding-top: 22px;
+}
+
+.tle-para2.sb {
+    font-size: 21px;
+    font-weight: 500;
+    color: #474a59;
+    line-height: 1.4;
+    padding-top: 40px;
+    /*padding-bottom: 21px;*/
+}
+
+.tle-para3.s3 {
+    color: #474a59;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.mn-qte {
+    font-size: 21px;
+    color: #00c6ff;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.list-para-dtld {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 9px;
+}
+
+.list-para-dtld li {
+    padding-bottom: 19px;
+}
+
+.list-para-dtld .tle-para {
+    position: relative;
+    padding-left: 19px;
+}
+
+.list-para-dtld .tle-para::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #00c6ff;
+    font-family: fontawesome;
+}
+
+.list-para-dtld .tle-para.b1::before {
+    content: "\f105";
+    font-size: 14px;
+}
+
+.list-para-dtld .tle-para.b2::before {
+    content: "\f0da";
+    font-size: 13px;
+    top: 3px;
+}
+
+.list-para-dtld .tle-para.b3::before {
+    content: "\f111";
+    font-size: 8px;
+    top: 7px;
+}
+
+.list-para-dtld .tle-para.b4::before {
+    content: "\f178";
+    font-size: 12px;
+    top: 4px;
+}
+
+.img-dtld-blg {
+    padding-top: 10px;
+}
+
+.row.img-dtld {
+    display: flex;
+    align-items: baseline;
+    position: relative;
+}
+
+.row.img-dtld .blg-img-stle img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 250px;
+    left: 10px;
+    right: 0;
+    vertical-align: top;
+}
+
+.spac-dtl-blg {
+    padding-right: 46px;
+}
+
+.video-blg-dtld {
+    position: relative;
+    margin-top: 36px;
+    margin-right: 15px;
+}
+
+.video-blg-dtld::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #8388a3;
+    opacity: 0.3;
+}
+
+.video-blg-dtld img {
+    height: 376px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.video-blg-dtld a {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.video-blg-dtld a .fa {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    -moz-background-clip: text;
+    font-size: 88px;
+    background-image: linear-gradient(to left bottom, #cccc, #ffffff);
+}
+
+.video-blg-dtld a .fa:hover {
+    background-image: linear-gradient(to left bottom, #ffffff, #cccc);
+}
+
+.image-blg-dtld .img-carousel {
+    padding-top: 24px;
+    padding-bottom: 22px;
+}
+
+.image-blg-dtld {
+    padding-top: 39px;
+    padding-right: 15px;
+}
+
+.image-blg-dtld .tle-para3.s3 {
+    padding-top: 8px;
+}
+
+#slider .projectitem img {
+    height: 375px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#navigation {
+    padding: 0 20px;
+}
+
+#navigation .projectitem {
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 10px;
+    width: 100%;
+    padding-right: 10px;
+}
+
+#navigation .projectitem img {
+    height: 55px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+#navigation .owl-nav, #blog-readers .owl-nav {
+    display: block !important;
+}
+
+#navigation .owl-nav button, #blog-readers .owl-nav button {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+#navigation .owl-nav button .fa, #blog-readers .owl-nav button .fa {
+    color: #00c6ff;
+}
+
+#navigation .owl-nav .owl-prev, #blog-readers .owl-nav .owl-prev {
+    left: 0;
+}
+
+#navigation .owl-nav .owl-next, #blog-readers .owl-nav .owl-next {
+    right: 0;
+}
+
+#navigation .owl-dots {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    text-align: center;
+}
+
+#navigation .owl-dots .owl-dot.active {
+    background-color: #00c6ff;
+    color: #00c6ff;
+    width: 11px;
+    margin: 0 8px 0 0;
+    height: 11px;
+    border-radius: 21px;
+}
+
+#navigation .owl-dots .owl-dot {
+    background-color: #cccccc;
+    width: 9px;
+    margin: 0 8px 0 0;
+    height: 9px;
+    border-radius: 100%;
+}
+
+.tag-lnks ul li {
+    display: inline-block;
+    padding-top: 36px;
+    padding-right: 3px;
+}
+
+.tag-lnks ul li a {
+    color: #474a59;
+    font-size: 17px;
+}
+
+.tag-lnks ul li a span {
+    color: #8388a3;
+}
+
+.tag-lnks ul li a:hover {
+    transition: all 0.4s;
+    color: #00c6ff;
+}
+
+.tag-lnks ul li a:hover span {
+    color: #00c6ff;
+    transition: all 0.4s;
+}
+
+@media screen and (max-width: 767px) {
+    .blog-hd .tag-dtld li:last-child {
+        float: unset;
+    }
+    .inner-dtld-blog .quote-box {
+        padding: 24px 44px 25px 0;
+    }
+    .inner-dtld-blog .quote-box::before {
+        left: -12%;
+        top: 6px;
+    }
+    .inner-dtld-blog .quote-box .tle-mn {
+        font-size: 18px;
+    }
+    .row.img-dtld {
+        display: block;
+    }
+    .row.img-dtld .blg-img-stle img {
+        position: unset;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .video-blg-dtld img {
+        height: 270px;
+    }
+    .video-blg-dtld a {
+        top: 32%;
+        left: -21px;
+    }
+    #navigation .projectitem img {
+        height: 27px;
+    }
+    #navigation .projectitem {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #navigation .owl-dots {
+        width: 88%;
+    }
+    .tag-lnks {
+        margin-top: 35px;
+    }
+    .tag-lnks ul li {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+    #navigation .owl-dots {
+        width: 94%;
+    }
+    .row.img-dtld {
+        display: block;
+    }
+    .row.img-dtld .blg-img-stle img {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        position: unset;
+        margin-top: 0px;
+        margin-top: 21px;
+    }
+}
+
+/* End sbiepay Detailed Page*/
+
+/*Blog Readers*/
+
+.blog-readers-block {
+    margin-top: 40px;
+    background-color: #fff;
+    padding-bottom: 32px;
+}
+
+.blog-readers-block .title-sm {
+    text-align: center;
+    color: #6075e0;
+    padding-top: 36px;
+    padding-bottom: 30px;
+}
+
+.blog-readers-block a {
+    text-decoration: none;
+}
+
+.blog-readers-block .tle-tags {
+    color: #8388a3;
+}
+
+.blog-readers-block .dtld-bg {
+    border-color: #6075e0;
+}
+
+.blog-readers-block .rds-txt, .usr-dtls-cm .usr-nm {
+    font-size: 18px;
+    font-weight: 500;
+    color: #474a59;
+    line-height: 1.3;
+}
+
+.blog-readers-block .owl-carousel {
+    padding: 0 62px;
+}
+
+.blog-readers-block .owl-item {
+    margin-bottom: 5px;
+}
+
+.blog-readers-block .owl-carousel {
+    padding: 0 60px;
+}
+
+.blog-readers-block .owl-carousel .item {
+    padding-left: 5px;
+}
+
+.blog-readers-block .owl-carousel .item2 {
+    border-right: 1px solid #eaeaee;
+}
+
+.owl-nav .owl-prev {
+    left: 25px;
+}
+
+.owl-nav .owl-next {
+    right: 25px;
+}
+
+.owl-nav button .fa {
+    color: #6075e0;
+}
+
+@media screen and (max-width: 767px) {
+    .blog-readers-block .owl-carousel .item2 {
+        border-right: none;
+    }
+}
+
+/*End Blog Readers*/
+
+/*User Comment Section*/
+
+.blog-cmt-cnct-block {
+    background-color: #fff;
+    margin-top: 30px;
+    border-bottom: 1px solid #e2e3e9;
+    padding-bottom: 5px;
+}
+
+.blog-cmt-cnct-block a {
+    text-decoration: none;
+}
+
+.nos-cmt {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eaeaee;
+}
+
+.nos-cmt .title-sm {
+    color: #ff8d41;
+}
+
+.nos-cmt .cmts-btn {
+    margin-left: auto;
+}
+
+.nos-cmt .btn, .form-blog-usr .btn-submit a {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: Montserrat;
+    background: linear-gradient(to right, #ff8d41, #cd5171);
+    border: none;
+    padding: 15px 43px;
+    border-radius: 24px;
+}
+
+.nos-cmt .btn:hover {
+    background: linear-gradient(to right, #cd5171, #ff8d41);
+}
+
+.user-cmt {
+    padding: 40px 40px 0 40px;
+}
+
+.user-cmt .img-usr {
+    float: left;
+    width: 10%;
+}
+
+.user-cmt .img-usr img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.user-cmt .usr-dtls-cm {
+    float: left;
+    width: 90%;
+    padding-left: 18px;
+}
+
+.user-cmt ul li {
+    float: left;
+    padding-bottom: 32px;
+    width: 100%;
+}
+
+.usr-dtls-cm .title-sm {
+    color: #8388a3;
+    padding-top: 9px;
+    padding-bottom: 11px;
+}
+
+.usr-dtls-cm .title-sm span {
+    color: #ff8d41;
+    border-left: 1px solid #eaeaef;
+    padding-left: 5px;
+}
+
+.usr-dtls-cm .tle-para {
+    line-height: 1.3;
+}
+
+.form-blog-usr {
+    background-color: #fff;
+    padding: 40px;
+}
+
+.form-blog-usr .title-sm {
+    color: #ff8d41;
+}
+
+.form-blog-usr .form-group .title-sm {
+    color: #474a59;
+    padding-bottom: 14px;
+}
+
+.form-blog-usr .form-control {
+    height: 46px;
+    padding: 6px 12px 9px 20px;
+    font-size: 17px;
+    color: #8388a3;
+    border: 1px solid #e3eaec;
+    border-radius: 24px;
+    box-shadow: unset;
+    width: 310px;
+}
+
+.form-blog-usr input::placeholder {
+    color: #8388a3;
+}
+
+.form-blog-usr .form-group textarea {
+    height: 128px;
+    resize: none;
+    width: 100%;
+    padding: 13px 22px;
+}
+
+.form-blog-usr form {
+    padding-top: 34px;
+}
+
+.form-blog-usr .form-group {
+    margin-bottom: 18px;
+}
+
+.form-blog-usr .btn-submit {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 13px 15px 0 15px;
+}
+
+.form-blog-usr .btn-submit h6 {
+    margin-left: auto;
+    font-size: 17px;
+    color: #8388a3;
+}
+
+@media screen and (max-width: 767px) {
+    .nos-cmt {
+        padding: 25px;
+        display: block;
+        text-align: center;
+    }
+    .nos-cmt .cmts-btn {
+        margin-top: 15px;
+    }
+    .user-cmt {
+        padding: 25px 25px 0 25px;
+    }
+    .form-blog-usr .form-control {
+        width: 100%;
+    }
+    .usr-dtls-cm .title-sm {
+        padding-top: 5px;
+        font-size: 11px;
+    }
+    .form-blog-usr {
+        background-color: #fff;
+        padding: 25px;
+    }
+}
+
+/*End sbiepay Style*/
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) translateY(16%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0) translateZ(0) translateY(13%);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(0) translateZ(0) translateY(10%);
+        opacity: 0;
+    }
+}
+
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    z-index: 0;
+}
+
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 690px;
+    top: 20%;
+    transform: translateY(-50%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%);
+}
+
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+
+.bgBottom {
+    z-index: 5;
+}
+
+.bgBottom2 {
+    z-index: 6;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+.waveTop {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+    animation: move-wave 3s;
+    -webkit-animation: move-wave 3s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.waveMiddle {
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.waveAnimation .waveMiddle {
+    animation: move_wave 4s linear infinite;
+}
+
+.waveBottom {
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.waveAnimation .waveBottom {
+    animation: move_wave 4s linear infinite;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.waveBottom2 {
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.waveAnimation .waveBottom2 {
+    /*animation: move_wave 3s linear infinite;
+     animation-delay: 4s;*/
+    opacity: 0;
+}
+
+@media screen and (min-width: 1550px) {
+    .waveMiddle, .waveBottom, .waveBottom2 {
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: center;
+    }
+    .waveWrapperInner {
+        top: 22%;
+    }
+    @keyframes move_wave {
+        0% {
+            transform: translateX(0) translateZ(0) translateY(12%);
+            opacity: 0;
+        }
+        50% {
+            transform: translateX(0) translateZ(0) translateY(8%);
+            opacity: 0.7;
+        }
+        100% {
+            transform: translateX(0) translateZ(0) translateY(4%);
+            opacity: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .waveMiddle, .waveBottom, .waveBottom2 {
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+    }
+    .waveWrapperInner {
+        top: 22%;
+    }
+    @keyframes move_wave {
+        0% {
+            transform: translateX(0) translateZ(0) translateY(12%);
+            opacity: 0;
+        }
+        50% {
+            transform: translateX(0) translateZ(0) translateY(8%);
+            opacity: 0.7;
+        }
+        100% {
+            transform: translateX(0) translateZ(0) translateY(4%);
+            opacity: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 2600px) {
+    .waveMiddle, .waveBottom, .waveBottom2 {
+        background-size: 100% auto;
+        background-position: center;
+    }
+    .waveWrapperInner {
+        top: 17%;
+    }
+    @keyframes move_wave {
+        0% {
+            transform: translateX(0) translateZ(0) translateY(12%);
+            opacity: 0;
+        }
+        50% {
+            transform: translateX(0) translateZ(0) translateY(8%);
+            opacity: 0.7;
+        }
+        100% {
+            transform: translateX(0) translateZ(0) translateY(4%);
+            opacity: 0;
+        }
+    }
+}
+
+/***** second is wave start from here ***/
+
+@keyframes move_wave_2 {
+    0% {
+        transform: translateX(0) translateZ(0) translateY(16%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0) translateZ(0) translateY(13%);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(0) translateZ(0) translateY(10%);
+        opacity: 0;
+    }
+}
+
+.waveWrapper-2 {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    z-index: 0;
+    /*    background-image: url("../img/coin.png");
+      background-repeat: no-repeat;
+      background-position: right center;*/
+}
+
+.waveWrapperInner-2 {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 690px;
+    top: 47%;
+    transform: translateY(-50%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%);
+}
+
+.waveWrapperInner-2.bgTop-2 {
+    z-index: 15;
+}
+
+.bgMiddle-2 {
+    z-index: 10;
+    opacity: 0.75;
+}
+
+.bgBottom-2 {
+    z-index: 5;
+}
+
+.bgBottom2-2 {
+    z-index: 6;
+}
+
+.waveTop-2 {
+    background-size: 50% 100px;
+}
+
+.waveAnimation-2 .waveTop-2 {
+    animation: move-wave 3s;
+    -webkit-animation: move-wave 3s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.waveMiddle-2 {
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.waveAnimation-2 .waveMiddle-2 {
+    animation: move_wave_2 4s linear infinite;
+}
+
+.waveBottom-2 {
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.waveAnimation-2 .waveBottom-2 {
+    animation: move_wave_2 4s linear infinite;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.waveBottom2-2 {
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.waveAnimation-2 .waveBottom2-2 {
+    /*animation: move_wave 3s linear infinite;
+     animation-delay: 4s;*/
+    opacity: 0;
+}
+
+@media screen and (min-width: 1550px) {
+    .waveMiddle-2, .waveBottom-2, .waveBottom2-2 {
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: center;
+    }
+    .waveWrapperInner-2 {
+        top: 48%;
+    }
+    @keyframes move_wave_2 {
+        0% {
+            transform: translateX(0) translateZ(0) translateY(12%);
+            opacity: 0;
+        }
+        50% {
+            transform: translateX(0) translateZ(0) translateY(8%);
+            opacity: 0.7;
+        }
+        100% {
+            transform: translateX(0) translateZ(0) translateY(4%);
+            opacity: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .waveMiddle-2, .waveBottom-2, .waveBottom-2 {
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+    }
+    .waveWrapperInner-2 {
+        top: 48%;
+    }
+    @keyframes move_wave_2 {
+        0% {
+            transform: translateX(0) translateZ(0) translateY(12%);
+            opacity: 0;
+        }
+        50% {
+            transform: translateX(0) translateZ(0) translateY(8%);
+            opacity: 0.7;
+        }
+        100% {
+            transform: translateX(0) translateZ(0) translateY(4%);
+            opacity: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 2600px) {
+    .waveWrapperInner-2 {
+        height: 1200px;
+    }
+    .waveMiddle-2, .waveBottom-2, .waveBottom-2 {
+        background-size: 100% auto;
+        background-position: center;
+    }
+    .waveWrapperInner-2 {
+        top: 48%;
+    }
+    @keyframes move_wave_2 {
+        0% {
+            transform: translateX(0) translateZ(0) translateY(12%);
+            opacity: 0;
+        }
+        50% {
+            transform: translateX(0) translateZ(0) translateY(8%);
+            opacity: 0.7;
+        }
+        100% {
+            transform: translateX(0) translateZ(0) translateY(4%);
+            opacity: 0;
+        }
+    }
+}
+
+/* @media screen and (max-width: 480px) {
+
+.slide {
+  width: 50%;
+  height: 50%;
+      }
+} */
+
+/* override position and transform in 3.3.x */
+
+.client-carousel-inner .item {
+    background: transparent !important;
+}
+
+.client-carousel-inner .item.left.active {
+    transform: translateX(-33%);
+}
+
+.client-carousel-inner .item.right.active {
+    transform: translateX(33%);
+}
+
+.client-carousel-inner .item.next {
+    transform: translateX(33%)
+}
+
+.client-carousel-inner .item.prev {
+    transform: translateX(-33%)
+}
+
+.client-carousel-inner .item.right, .client-carousel-inner .item.left {
+    transform: translateX(0);
+}
+
+.sbi-partners.active, .sbi-partners.active:hover {
+    background-color: #000066 !important;
+}
+
+.modal-size {
+    height: 400px;
+    overflow: auto;
+}
+
+.modal-size ul li {
+    margin-bottom: 5px;
+}
+
+.modal-size ol li {
+    margin-bottom: 5px;
+}
+
+.modal-size ol {
+    margin-left: 2px;
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+.modal-size ul {
+    margin-left: 2px;
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    top: 50%;
+    margin: 0 auto;
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+    .modal-xlg {
+        width: 90%;
+    }
+}
+
+/* Vertical Divider */
+
+.grid-divider {
+    position: relative;
+}
+
+.grid-divider>[class*="col-"]:nth-child(n+2):after {
+    content: "";
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .grid-divider>[class*="col-"]:nth-child(n+2):after {
+        width: 100%;
+        height: 1px;
+        left: 0;
+        top: -4px;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-divider>[class*="col-"]:nth-child(n+2):after {
+        width: 1px;
+        height: auto;
+        left: -1px;
+    }
+}
+
+.item-img-cont {
+    padding: 10px;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+section.sbiepay-banner .btn1 {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#button2 {
+    border: 2px solid #00c6ff;
+    border-radius: 20px;
+    position: absolute;
+    font-size: 20px;
+}
+
+#button3 {
+    border: 2px solid #00c6ff;
+    border-radius: 20px;
+    position: absolute;
+    font-size: 20px;
+}
+
+#button4 {
+    background: linear-gradient(to right, #00c6ff, #5165cd);
+	border: transparent;
+    border-radius: 20px;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    font-size: 15px;
+    padding: 5px 30px;
+    transition: all 0.4s;
+   
+}
+
+#button5 {
+    background: linear-gradient(to right, #00c6ff, #5165cd);
+	border: transparent;
+    border-radius: 20px;
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    font-size: 15px;
+    padding: 5px 30px;
+    transition: all 0.4s;
+   
+}
+
+#features {
+    margin-top: 50px;
+    padding: 50px;
+    text-align: center;
+}
+
+.left {
+    float: left;
+    color: #fff;
+}
+
+.right {
+    float: right;
+    color: #fff;
+}
+
+.mt {
+    margin-top: 0px;
+}
+
+/* Demo Page CSS */
+
+.sbiepay-container {
+    /* margin-top: 5%;
+        margin-bottom: 5%; */
+}
+
+.sbiepay-logo {
+    position: relative;
+    margin-left: -41.5%;
+}
+
+.sbiepay-logo img {
+    position: absolute;
+    width: 20%;
+    margin-top: 19%;
+    background: #00c6ff;
+    border-radius: 4.5rem;
+    padding: 5%;
+}
+
+.sbiepay-form-1 {
+    padding: 9%;
+    background: #00c6ff;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sbiepay-form-1 h3 {
+    text-align: left;
+    margin-bottom: 12%;
+    color: #fff;
+}
+
+.sbiepay-form-2 {
+    padding: 9%;
+    background: #f05837;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sbiepay-form-2 h3 {
+    text-align: center;
+    margin-bottom: 12%;
+    color: #fff;
+}
+
+.btnSubmit {
+    font-weight: 600;
+    color: #282726;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+}
+
+.btnForgetPwd {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btnForgetPwd:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.collapse-btn, .collapse-btn:hover {
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff !important;
+}
+
+.collapse-btn i {
+    font-weight: bold;
+}
+
+#downloadCollapse .fa-file {
+    color: #fff;
+}
+
+@media screen and (max-width: 400px) {
+    #button4  {
+        font-size: 5px;
+        padding: 3px;
+    }
+    .apm {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #button5  {
+        font-size: 5px;
+        padding: 3px;
+    }
+    .apm {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+}
+
+#scroller {
+    position: relative;
+}
+
+#scroller .innerScrollArea {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#scroller ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#scroller li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+}
+
+
+.carousel-control{
+    width: 10%;
+}
+
+
+/* Client Scrolling */
+/* Container DIV - automatically generated */
+.simply-scroll-container { 
+	position: relative;
+}
+
+/* Clip DIV - automatically generated */
+.simply-scroll-clip { 
+	position: relative;
+	overflow: hidden;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list { 
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+	
+.simply-scroll-list li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+	
+.simply-scroll-list li img {
+	border: none;
+	display: block;
+}
+
+/* Custom class modifications - adds to / overrides above
+
+.simply-scroll is default base class */
+
+/* Container DIV */
+.simply-scroll { 
+	
+	height: 100px;
+	margin-bottom: 1em;
+}
+
+/* Clip DIV */
+.simply-scroll .simply-scroll-clip {
+	
+	height: 100px;
+}
+	
+/* Explicitly set height/width of each list item */	
+.simply-scroll .simply-scroll-list li {
+	float: left; /* Horizontal scroll only */
+	width: 290px;
+	height: 200px;
+}
+
+.cardRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardCol {
+    display: flex;
+    margin-top: 10px;
+    min-width: 90px;
+    max-width: 292px;
+}
+
+.cardCol > .card > .card-header {
+    background: #000066;
+    color: white;
+    padding: 10px;
+    min-height: 66px;
+}
+
+.cardCol > .card > .card-body {
+    border: 1px solid #999;
+    border-top: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    min-height: 124px;
+}
