@@ -62,8 +62,12 @@ body {
 }else {
        login_form.submit();
     }
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
 }
-    </script>
+ }
+ </script>
 </head>
 <body oncontextmenu="return mesg()">
   
