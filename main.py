@@ -6,7 +6,7 @@ def index():
    return redirect_url(url_for('home'))
 
 @app.route('/home')
-def homep():
+def home():
    return render_template('index.html')
 
 @app.route('/login')
