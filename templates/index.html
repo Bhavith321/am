@@ -23,11 +23,6 @@
    gtag('js', new Date());
    gtag('config', 'UA-223304037-1');
   </script>
-  <script type="text/javascript">
-        function preventBack() { window.history.forward(); }
-        setTimeout("preventBack()", 0);
-        window.onunload = function () { null };
-  </script>
  <style>
 html {
   position: relative;
@@ -55,6 +50,9 @@ body {
      alert('This function is not allowed here!');
      return false;
     }
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
 </script>
 </head>
 <body oncontextmenu="return mesg()">
