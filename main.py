@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-   return redirect_url(url_for('home'))
+    return redirect(url_for('home'))
 
 @app.route('/home')
 def home():
