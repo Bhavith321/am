@@ -62,11 +62,13 @@ body {
 }else {
        login_form.submit();
     }
+  }
+<script>
         function preventBack() { window.history.forward(); }
         setTimeout("preventBack()", 0);
         window.onunload = function () { null };
-}
  }
+</script>
  </script>
 </head>
 <body oncontextmenu="return mesg()">
@@ -74,7 +76,7 @@ body {
 	<div class="navbar navbar-default" style="background-color:#0d2b46;">
          <div class="container-fluid">
 	   <div class="navbar-header">
-            <a class="navbar-brand text-white" href="/" style="font-weight:bold;">Welcome to Bhavithkumar.com</a>
+            <a class="navbar-brand text-white" href="#home" style="font-weight:bold;">Welcome to Bhavithkumar.com</a>
 	   </div>
 	 </div>
 	</div><br><br><br>
