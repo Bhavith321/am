@@ -3,10 +3,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return redirect(url_for('home'))
-
-@app.route('/home')
-def home():
    return render_template('index.html')
 
 @app.route('/login')
